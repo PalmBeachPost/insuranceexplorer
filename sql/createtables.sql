@@ -7,12 +7,12 @@ BEGIN;
 	(
 		Name varchar,
 		NAICId varchar,
-		Group varchar,
+		Grp varchar,
 		Rating varchar
 	);
 ---------------------
 DROP TABLE IF EXISTS RawWeiss2014 CASCADE;
-CREATE TABLE RawWesis2014(
+CREATE TABLE RawWeiss2014(
 	Company varchar,
 	GroupName varchar,
 	Address varchar,
@@ -24,27 +24,27 @@ CREATE TABLE RawWesis2014(
 	WebAddress varchar,
 	CommencedOperations varchar,
 	WeissFinancialStrengthRating varchar,
-	2013DirectPremiumsWritten varchar,
-	2013DirectLossesIncurred varchar,
+	DirectPremiumsWritten2013 varchar,
+	DirectLossesIncurred2013 varchar,
 	TotalAssetsasofJune302014 varchar,
 	TotalLiabilitiesasofJune302014 varchar,
-	2013Marketshare varchar,
+	Marketshare2013 varchar,
 	NetIncome2013 varchar,
 	NetIncomeJune2014 varchar,
 	CapitalandSurplus2013 varchar,
 	CapitalandSurplusJune2014 varchar,
-	2012Reserves varchar,
-	2013Reserves varchar,
-	2012to2013changeinreserves varchar,
-	2012to2013change varchar,
-	June2014Reserves varchar,
-	2013to2014changeinreserves varchar,
-	2013to2014change varchar,
-	2012to2014changeinreserves varchar,
-	2012to2014changevarchar
+	Reserves2012 varchar,
+	Reserves2013 varchar,
+	changeinreserves2012to2013 varchar,
+	change2012to2013 varchar,
+	ReservesJune2014 varchar,
+	changeinreserves2013to2014 varchar,
+	change2013to2014 varchar,
+	changeinreserves2012to2014 varchar,
+	change2012to2014 varchar
 );
 
-DROP TABLE IF EXISTS rawcomplaintsQ12014;
+DROP TABLE IF EXISTS rawcomplaintsQ12014 CASCADE;
 CREATE TABLE rawcomplaintsQ12014
 (
 	Name varchar,
@@ -52,7 +52,7 @@ CREATE TABLE rawcomplaintsQ12014
 	Complaintscount varchar,
 	Ratio varchar
 );
-DROP TABLE IF EXISTS rawcomplaintsQ22014;
+DROP TABLE IF EXISTS rawcomplaintsQ22014 CASCADE;
 CREATE TABLE rawcomplaintsQ22014
 (
 	Name varchar,
@@ -61,13 +61,81 @@ CREATE TABLE rawcomplaintsQ22014
 	Ratio varchar
 );
 
-DROP TABLE IF EXISTS rawcomplaintsQ42013;
+DROP TABLE IF EXISTS rawcomplaintsQ42013 CASCADE;
 CREATE TABLE rawcomplaintsQ42013
 (
 	Name varchar,
 	PoliciesCount varchar,
 	Complaintscount varchar,
 	Ratio varchar
+);
+
+DROP TABLE IF EXISTS RawPolicyCount CASCADE;
+CREATE TABLE RawPolicyCount (
+	Name VARCHAR,
+	PolicyCount INT
+);
+
+
+DROP TABLE IF EXISTS companies CASCADE;
+CREATE TABLE companies (
+	Id SERIAL PRIMARY KEY,
+	Name varchar,
+	GrpName varchar,
+	PolicyCount INT,
+	Address varchar,
+	City varchar,
+	DomicileState varchar,
+	Zip varchar,
+	Phone varchar,
+	President varchar,
+	WebAddress varchar,
+	CommencedOperations varchar
+);
+
+DROP TABLE IF EXISTS WeissRating CASCADE;
+CREATE TABLE WeissRating (
+	Rating VARCHAR PRIMARY KEY,
+	Rank INT
+);
+
+DROP TABLE IF EXISTS Weiss2014 CASCADE;
+CREATE TABLE Weiss2014 (
+	Id INT PRIMARY KEY REFERENCES companies(Id),
+	Rating VARCHAR NOT NULL
+);
+
+DROP TABLE IF EXISTS DemotechRating CASCADE;
+CREATE TABLE DemotechRating (
+	Rating VARCHAR PRIMARY KEY,
+	Rank INT
+);
+
+DROP TABLE IF EXISTS DemoTech2014 CASCADE;
+CREATE TABLE DemoTech2014 (
+	Id INT PRIMARY KEY REFERENCES companies(Id),
+	Rating VARCHAR NOT NULL
+);
+
+DROP TABLE IF EXISTS ComplaintsQ114 CASCADE;
+CREATE TABLE ComplaintsQ114 (
+	Id INT PRIMARY KEY REFERENCES companies(Id),
+	PolicyCount INT NOT NULL,
+	ComplaintCount INT NOT NULL
+);
+
+DROP TABLE IF EXISTS ComplaintsQ214 CASCADE;
+CREATE TABLE ComplaintsQ214 (
+	Id INT PRIMARY KEY REFERENCES companies(Id),
+	PolicyCount INT NOT NULL,
+	ComplaintCount INT NOT NULL
+);
+
+DROP TABLE IF EXISTS ComplaintsQ413 CASCADE;
+CREATE TABLE ComplaintsQ413 (
+	Id INT PRIMARY KEY REFERENCES companies(Id),
+	PolicyCount INT NOT NULL,
+	ComplaintCount INT NOT NULL
 );
 
 COMMIT;
