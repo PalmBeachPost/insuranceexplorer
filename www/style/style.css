@@ -1,0 +1,17 @@
+#fakebody{
+	max-width:80%;
+	margin: auto;
+}
+/*----------------------------------------------------------*/
+
+.w10{
+	width:10%;
+}
+
+td{
+	text-align: center;
+}
+
+tr td:first-child{
+	text-align: left;
+}

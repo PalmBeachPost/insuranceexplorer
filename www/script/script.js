@@ -66,11 +66,6 @@ function drawTable() {
         aoColumnDefs: [
          { "asSorting": [ "asc", "desc"], "aTargets": [ "_all"] }
         ],
-        responsive: true,
-        createdRow: function ( row, data, index ) {
-            if ( data['weissrank'] == 1 ) {
-                $('td', row).eq(1).css('color','green');
-            }
-        }
+        responsive: true
     });
 }
