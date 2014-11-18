@@ -57,7 +57,7 @@ function setUpScales(){
                         .domain(d3.extent(insuranceData.map( function(d){ return d.demotechrank;})))
                         .range(['#66ED22','#ED4729']);
     colorScaleCompRatio = d3.scale.linear()
-                        .domain([0,6000])
+                        .domain(d3.extent(insuranceData.map( function(d){ return d.complaint_ratio;})))
                         .range(['#ED4729','#66ED22',]);
 }
 function drawTable() {
@@ -82,10 +82,7 @@ function drawTable() {
         createdRow: function ( row, data, index ) {
             $('td', row).eq(1).css('background-color',colorScaleWeiss(data['weissrank']));
             $('td', row).eq(2).css('background-color',colorScaleDemoTech(data['demotechrank']));
-            
-
-            var x = data['complaint_ratio'] == -1?6000:data['complaint_ratio'];
-            $('td', row).eq(3).css('background-color',colorScaleCompRatio(x));
+            $('td', row).eq(3).css('background-color',colorScaleCompRatio(data['complaint_ratio'] ));
         }
     });
 }
