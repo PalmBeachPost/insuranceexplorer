@@ -43,7 +43,10 @@ SELECT
 	C.PolicyCount,
 	Q4.complaintcount AS Q4_2013_complaintcount,
 	Q1.complaintcount AS Q1_2014_complaintcount,
-	Q2.complaintcount  AS Q2_2014_complaintcount
+	Q2.complaintcount  AS Q2_2014_complaintcount,
+	Q4.policycount AS Q4_2013_policycount,
+	Q1.policycount AS Q1_2014_policycount,
+	Q2.policycount  AS Q2_2014_policycount
 INTO DetailedData
 FROM weiss2014 W
 INNER JOIN companies C ON W.id = C.id
