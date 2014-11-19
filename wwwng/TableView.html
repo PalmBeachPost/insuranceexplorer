@@ -1,0 +1,19 @@
+ <section  ng-controller="TableCtrl">
+    <input id="searchbox" type="text" ng-model="search.name" placeholder="Search by company name">
+    <table id="Table1" class="display order-column nowrap">
+            <thead>             
+                <tr>
+                    <th ng-click="sortby='name'; reverse=!reverse">Company</th>
+                    <th ng-click="sortby='weissrank'; reverse=!reverse">Weiss Rating</th>
+                    <th ng-click="sortby='demotechrank'; reverse=!reverse">Demotech Rating</th>
+                    <th ng-click="sortby='complaint_ratio'; reverse=!reverse">Complaint Ratio</th> 
+                </tr>           
+            </thead>
+             <tr ng-repeat="company in companies.data| filter:search | orderBy:sortby:reverse">
+                <td class="compName"><a href="#/detail/{{company.id}}">{{company.name}}</a></td>
+                <td>{{company.weiss}}</td>
+                <td>{{company.demotech}}</td>
+                <td>{{company.complaint_ratio}}</td>
+             </tr>
+        </table>
+</section>
