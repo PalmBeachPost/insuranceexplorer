@@ -26,7 +26,7 @@ SELECT
 FROM rawweiss2014;
 
 
-INSERT INTO Companies
+/*INSERT INTO Companies
 (
 	Name,
 	GrpName
@@ -41,7 +41,7 @@ WHERE NOT EXISTS
 	SELECT * FROM Companies
 	WHERE Companies.name = rawdemotech.name
 );
-
+*/
 -------------------------------------------------------
 INSERT INTO WeissRating
 (Rating, Rank)
@@ -160,3 +160,9 @@ SET PolicyCount = (
 	AND C.id = Q.id
 	)
 WHERE C.policycount IS NULL;
+
+
+-------------------------------------------
+UPDATE Companies
+SET policycount = 381284
+Where name like 'STATE FARM FLORIDA INSURANCE COMPANY';
