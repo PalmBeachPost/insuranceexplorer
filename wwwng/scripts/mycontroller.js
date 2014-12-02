@@ -67,9 +67,9 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
             if($chartdata.quarters.length > 0){
                 drawChart($chartdata);
             }*/
-            drawGauge('#weissgauge',0,18,19-parseInt($scope.companyref.data.weissrank),$scope.companyref.data.weiss,"Weiss Score");
-            drawGauge('#demotechgauge',0,8,9-parseInt($scope.companyref.data.demotechrank),$scope.companyref.data.demotech,"Demotech Score");
-            drawGauge('#complaintratiogauge',0,6000,parseInt($scope.companyref.data.complaint_ratio),$scope.companyref.data.complaint_ratio,"Complaint Ratio");
+            drawGauge('#weissgauge',0,13,14-parseInt($scope.companyref.data.weissrank),$scope.companyref.data.weiss,"Weiss Score");
+            drawGauge('#demotechgauge',0,6,7-parseInt($scope.companyref.data.demotechrank),$scope.companyref.data.demotech,"Demotech Score");
+            drawGaugeReverse('#complaintsper10kgauge',0,10000,parseFloat($scope.companyref.data.complaints_per_10k),$scope.companyref.data.complaints_per_10k,"Complaints/10,000 policies");
         }
     });
 });

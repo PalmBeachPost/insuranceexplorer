@@ -23,3 +23,21 @@ td.compName a,td.compName a:visited{
 	text-decoration: none;
 	color:inherit;	
 }
+td{
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-x: 50%;
+}
+
+td.worst{	
+	background-image: url('../icons/sad.png');
+}
+
+td.average{	
+	background-image: url('../icons/neutral.png');
+}
+td.best{	
+	background-image: url('../icons/happy.png');
+}
+
+
