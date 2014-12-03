@@ -48,28 +48,34 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
 
     $scope.$watch($scope.dataLoaded, function (newValue, oldValue) {
         if(newValue){
-           /* var $chartdata ={quarters:[],policycounts:[],complaintcounts:[]};
-            if($scope.companyref.data.q4_2013_policycount && $scope.companyref.data.q4_2013_complaintcount){
+           var $chartdata ={quarters:[],policycounts:[],complaintcounts:[]};
+            if($scope.companyref.data.q4_2013_policycount){
                 $chartdata.quarters.push("2013 Q4");
                 $chartdata.policycounts.push($scope.companyref.data.q4_2013_policycount);
-                $chartdata.complaintcounts.push($scope.companyref.data.q4_2013_complaintcount);
             }
-            if($scope.companyref.data.q1_2014_policycount && $scope.companyref.data.q1_2014_complaintcount){
+            if($scope.companyref.data.q1_2014_policycount){
                 $chartdata.quarters.push("2014 Q1");
                 $chartdata.policycounts.push($scope.companyref.data.q1_2014_policycount);
-                $chartdata.complaintcounts.push($scope.companyref.data.q1_2014_complaintcount);
             }
-            if($scope.companyref.data.q2_2014_policycount && $scope.companyref.data.q2_2014_complaintcount){
+            if($scope.companyref.data.q2_2014_policycount){
                 $chartdata.quarters.push("2014 Q2");
                 $chartdata.policycounts.push($scope.companyref.data.q2_2014_policycount);
-                $chartdata.complaintcounts.push($scope.companyref.data.q2_2014_complaintcount);
             }
-            if($chartdata.quarters.length > 0){
-                drawChart($chartdata);
-            }*/
-            drawGauge('#weissgauge',0,13,14-parseInt($scope.companyref.data.weissrank),$scope.companyref.data.weiss,"Weiss Score");
-            drawGauge('#demotechgauge',0,6,7-parseInt($scope.companyref.data.demotechrank),$scope.companyref.data.demotech,"Demotech Score");
-            drawGaugeReverse('#complaintsper10kgauge',0,10000,parseFloat($scope.companyref.data.complaints_per_10k),$scope.companyref.data.complaints_per_10k,"Complaints/10,000 policies");
+            if($chartdata.quarters.length > 1){
+                drawChart('#policycountchart',$chartdata.quarters,'Quarters', $chartdata.policycounts, 'No. of policies', '');
+            }
+            if($scope.companyref.data.q4_2013_complaintcount && $scope.companyref.data.total_2014_complaintcount){
+                var $actual = [];
+                $actual.push($scope.companyref.data.q4_2013_complaintcount);
+                $actual.push($scope.companyref.data.total_2014_complaintcount);
+                var $predicted =[0];
+                $predicted.push($scope.companyref.data.total_2014_complaintcount);
+                drawStacks('#complaintcountchart',['2013','2014'],'No. of Complaints',$predicted,'Estimated',$actual,'Actual','');
+            }            
+            drawGauge('#weissgauge',0,13,14-parseInt($scope.companyref.data.weissrank),$scope.companyref.data.weiss,"Weiss Rating");
+            drawGauge('#demotechgauge',0,6,7-parseInt($scope.companyref.data.demotechrank),$scope.companyref.data.demotech,"Demotech Rating");
+            drawGauge('#complaintsper10kgauge',0,100,100-parseFloat($scope.companyref.data.complaintpercentile),
+               $scope.companyref.data.complaints_per_10k,"Customer Satisfaction (complaints/10,000 policies)");
         }
     });
 });

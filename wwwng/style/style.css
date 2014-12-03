@@ -1,17 +1,59 @@
 html{
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
 }
+#header{
+	width: 80%;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-top: 30px;
+	border-bottom: 1px dotted grey;
+	padding-bottom: 10px;
+}
+h1{
+	font-size: 3em;
+	font-family: 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	display: inline-block;
+	display: inline-block;
+	font-style: normal;
+	font-weight: 100;
+}
+
+#logo{
+	height: 100px;
+	vertical-align: middle;
+}
+th{
+	background-color:#eee;
+	border: 3px solid white;
+	padding-left: 5px;
+}
 tr:nth-child(even) {
 background-color: ghostwhite;
 }
-
+#backbtn{
+	text-decoration: none;
+	color: currentcolor;
+	background-color: #eee;
+	padding: 5px;
+	float: right;
+}
+#search *{
+	display: inline-block;
+}
 #searchbox{
-	width:500px;
+	width: 434px;
+	margin-left: 5px;
+	margin-bottom: 10px;
 }
 
 .gauge{
 	height:300px;
 	width:30%;
+	display: inline-block;
+}
+.chart{
+	height:300px;
+	width:45%;
 	display: inline-block;
 }
 
@@ -39,5 +81,3 @@ td.average{
 td.best{	
 	background-image: url('../icons/happy.png');
 }
-
-

@@ -1,5 +1,8 @@
  <section  ng-controller="TableCtrl">
-    <input id="searchbox" type="text" ng-model="search.name" placeholder="Search by company name">
+    <section id="search">
+        <p>Search: </p>
+        <input id="searchbox" type="text" ng-model="search.name" placeholder="Search by company name">
+    </section>
     <table id="Table1" class="display order-column nowrap">
             <thead>             
                 <tr>
@@ -8,7 +11,7 @@
                     <th ng-click="sortby='demotechrank'; reverse=!reverse">Demotech</th>
                     <th ng-click="sortby='policycount'; reverse=!reverse"># Policies</th> 
                     <th ng-click="sortby='total_complaints'; reverse=!reverse"># Complaints</th> 
-                    <th ng-click="sortby='complaintpercentile'; reverse=!reverse">Complaint Rating</th> 
+                    <th ng-click="sortby='complaintpercentile'; reverse=!reverse"><img src=".\icons\header.png" style="height: 30px;"></th> 
                 </tr>           
             </thead>
              <tr ng-repeat="company in companies.data| filter:search | orderBy:sortby:reverse">

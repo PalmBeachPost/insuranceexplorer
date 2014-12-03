@@ -1,41 +1,93 @@
-function drawChart (data){
-	$('#chart').highcharts({
+function drawChart ($selector,$xData,$xName,$yData,$yName,$title){
+	$($selector).highcharts({
         chart: {
-            type: 'column'
+            type: 'line'
         },
         title: {
-            text: 'title goes here'
-        },
-        subtitle: {
-            text: 'Source: maybe'
+            text: $title
+        },        
+        credits:{
+            enabled:false
         },
         xAxis: {
-            categories: data.quarters
+            categories: $xData,
+            title: $xName,
+            tickLength: 0
         },
         yAxis: [
 	        {
-	        	title: "No. of policies"
-	        },
-	        {
-	        	title: "No Of Complaints"
+	        	title: $yName
 	        }
         ],
         series :[
 	        {
-	        	name: 'series 1',
-	        	data:  data.policycounts,
-	        	yAxis: 0,
-	        	type : 'line'
-	        },
-	        {
-	        	name:'series 2',
-	        	data : data.complaintcounts,
-	        	yAxis : 1,
-	        	type : 'line'
+	        	name: $yName,
+	        	data:  $yData
 	        }
         ]
     });
 }
+
+function drawStacks($selector,$xData,$xName,$y1Data,$y1Name,$y2Data,$y2Name,$title){
+    $($selector).highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: $title
+        },                
+        credits:{
+            enabled:false
+        },
+        xAxis: {
+            categories: $xData,
+            title:$xName,            
+            tickLength: 0
+        },
+        yAxis: {
+            min: 0,
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                }
+            },
+            labels: {
+                enabled: false
+            },
+            title:$xName
+        },
+        legend: {
+            align: 'center',
+            verticalAlign: 'bottom',
+            backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+        },
+        tooltip: {
+            formatter: function () {
+                return '<b>' + this.x + '</b><br/>' +
+                    this.series.name + ': ' + this.y + '<br/>' +
+                    'Total: ' + this.point.stackTotal;
+            }
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal'
+                }
+        },
+        series: [{
+            name: 'Estimated for the whole year',
+            data: $y1Data,
+            color:'#CCC'
+        },{
+            name: 'Actual',
+            data: $y2Data
+        }]
+    });
+};
 
 function drawGauge ($selector,$min,$max,$value,$text,$title){
 	$($selector).highcharts({
