@@ -39,6 +39,7 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
     $scope.companies = companyList.getCompanies(); 
 })
 .controller('DetailCtrl', function ($scope, companyList, $http,$routeParams) {
+    $scope.hasCharts=false;
     $scope.currentcompanyid = parseInt($routeParams.companyId)-1;  
     $scope.companyref = companyList.getDetails($scope.currentcompanyid);
 
@@ -62,7 +63,8 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
                 $chartdata.policycounts.push($scope.companyref.data.q2_2014_policycount);
             }
             if($chartdata.quarters.length > 1){
-                drawChart('#policycountchart',$chartdata.quarters,'Quarters', $chartdata.policycounts, 'No. of policies', '');
+                drawChart('#policycountchart',$chartdata.quarters,'Quarters', $chartdata.policycounts, 'No. of policies', 'Policy Count');
+                $scope.hasCharts=true;
             }
             if($scope.companyref.data.q4_2013_complaintcount && $scope.companyref.data.total_2014_complaintcount){
                 var $actual = [];
@@ -70,7 +72,9 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
                 $actual.push($scope.companyref.data.total_2014_complaintcount);
                 var $predicted =[0];
                 $predicted.push($scope.companyref.data.total_2014_complaintcount);
-                drawStacks('#complaintcountchart',['2013','2014'],'No. of Complaints',$predicted,'Estimated',$actual,'Actual','');
+                drawStacks('#complaintcountchart',['2013','2014'],'No. of Complaints',
+                    $predicted,'Estimated',$actual,'Actual','Complaint count');
+                $scope.hasCharts=true;
             }            
             drawGauge('#weissgauge',0,13,14-parseInt($scope.companyref.data.weissrank),$scope.companyref.data.weiss,"Weiss Rating");
             drawGauge('#demotechgauge',0,6,7-parseInt($scope.companyref.data.demotechrank),$scope.companyref.data.demotech,"Demotech Rating");

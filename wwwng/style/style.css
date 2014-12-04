@@ -1,9 +1,11 @@
 html{
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
 }
-#header{
+#container{	
 	width: 80%;
 	margin: auto;
+}
+#header{
 	margin-bottom: 40px;
 	margin-top: 30px;
 	border-bottom: 1px dotted grey;
@@ -58,7 +60,6 @@ background-color: ghostwhite;
 }
 
 .viewholder{
-	width:80%;
 	margin: auto;
 }
 td.compName a,td.compName a:visited{
@@ -70,14 +71,83 @@ td{
 	background-repeat: no-repeat;
 	background-position-x: 50%;
 }
+.ratingicon{
+	height: 30px;
+	padding-left: 35%;
+}
+@media only screen and (max-width : 768px) {	
+	#container{
+		width:99%;
+	}	
+	.chart{
+		width:100%;
+	}
+}
+@media only screen and (max-width : 640px) {
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
 
-td.worst{	
-	background-image: url('../icons/sad.png');
+	td.compName{
+		padding-left: 0%;
+		font-weight: bold;
+		font-size: 1.1em;
+		background-color: #eee;
+	}
+	
+	.ratingicon{
+		padding-left: 0%;
+	}
+	/*
+	Label the data
+	*/
+	td:before{
+		font-weight: bold;
+		font-size: .8em;
+		color: #555;
+	}
+	td:nth-of-type(1):before { padding-left: 0; }
+	td:nth-of-type(2):before { content: "Weiss: "; }
+	td:nth-of-type(3):before { content: "Demotech: "; }
+	td:nth-of-type(4):before { content: "# Policies: "; }
+	td:nth-of-type(5):before { content: "# Complaints: "; }
+	td:nth-of-type(6):before { content: "Complaint Rating: "; }
+
+	.gauge{
+		width:100%;
+	}
 }
 
-td.average{	
-	background-image: url('../icons/neutral.png');
-}
-td.best{	
-	background-image: url('../icons/happy.png');
+@media only screen and (max-width : 320px) {	
+	.ratingicon{
+		padding-left: 10%;
+	}
 }

@@ -97,7 +97,7 @@ function drawGauge ($selector,$min,$max,$value,$text,$title){
         title:{ 
         	text: $title,        	
             verticalAlign: 'bottom',
-            y:-20
+            y:-60
     	},
     	tooltip:{
     		enabled:false
@@ -106,7 +106,7 @@ function drawGauge ($selector,$min,$max,$value,$text,$title){
     		enabled:false
     	},
         pane: {
-            center: ['50%', '70%'],
+            center: ['50%', '50%'],
             size: '100%',
             startAngle: -90,
             endAngle: 90,

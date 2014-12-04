@@ -6,22 +6,23 @@
     <table id="Table1" class="display order-column nowrap">
             <thead>             
                 <tr>
-                    <th ng-click="sortby='name'; reverse=!reverse">Company</th>
-                    <th ng-click="sortby='weissrank'; reverse=!reverse">Weiss</th>
-                    <th ng-click="sortby='demotechrank'; reverse=!reverse">Demotech</th>
-                    <th ng-click="sortby='policycount'; reverse=!reverse"># Policies</th> 
+                    <th ng-click="sortby='name'; namerev=!namerev; reverse=namerev" ng-init="namerev=true">Company</th>
+                    <th ng-click="sortby='weissrank'; weissrev=!weissrev; reverse=weissrev" ng-init="weissrev=true">Weiss</th>
+                    <th ng-click="sortby='demotechrank'; demrev=!demrev; reverse=demrev" ng-init="demrev=true">Demotech</th>
+                    <th ng-click="sortby='policycount'; policyrev=!policyrev; reverse=policyrev" ng-init="policyrev=true"># Policies</th> 
                     <th ng-click="sortby='total_complaints'; reverse=!reverse"># Complaints</th> 
-                    <th ng-click="sortby='complaintpercentile'; reverse=!reverse"><img src=".\icons\header.png" style="height: 30px;"></th> 
+                    <th ng-click="sortby='complaintpercentile'; reverse=!reverse">Complaint rating</th> 
                 </tr>           
             </thead>
              <tr ng-repeat="company in companies.data| filter:search | orderBy:sortby:reverse">
                 <td class="compName"><a href="#/detail/{{company.id}}">{{company.name}}</a></td>
                 <td>{{company.weiss}}</td>
                 <td>{{company.demotech}}</td>
-                <td>{{company.policycount}}</td>
-                <td>{{company.total_complaints}}</td>
-                <td ng-class="{1:'best', 2:'average', 3:'worst'}[company.complaintpercentilegroup]"></td>
+                <td>{{company.policycount_display.replace('.',',')}}</td>
+                <td>{{company.total_complaints_display.replace('.',',')}}</td>
+                <td><img class="ratingicon" src="./icons/icon{{company.complaintpercentilegroup}}.png" alt="test"/></td>
              </tr>
         </table>
+        <hr/>
        <p>Customer Satisfaction designed by <a href="http://www.thenounproject.com/Luis">Luis Prado</a> from the <a href="http://www.thenounproject.com">Noun Project</a></p>
 </section>

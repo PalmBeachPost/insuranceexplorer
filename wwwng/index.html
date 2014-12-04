@@ -13,13 +13,14 @@
 	    <link type="text/css" rel="stylesheet" href="./style/style.css"/>
 	</head>
 	<body ng-app="InsuranceExplorerApp">
-		<div id="header">
-			<img id="logo" src="./icons/logo.png"/>
-			<h1>Insurance Explorer</h1>
-		</div>
-		<div class="viewholder" ng-view></div>
+		<article id="container">
+			<div id="header">
+				<img id="logo" src="./icons/logo.png"/>
+				<h1>Insurance Explorer</h1>
+			</div>
+			<div class="viewholder" ng-view></div>
+		</article>
 		<script type="text/javascript" src="./scripts/chartscript.js"></script>
-
 		<script type="text/javascript" src="./scripts/mycontroller.js"></script>
 	</body>
 </html>

@@ -80,7 +80,8 @@ weissPercentile = NULL,
 complaintPercentileGroup=NULL;
 
 UPDATE exportstaging A
-SET WeissPercentile = (Select ROUND((100*count(*))::NUMERIC/118,2) from exportstaging B where B.weissrank < A.weissrank);
+SET WeissPercentile = (Select ROUND((100*count(*))::NUMERIC/(select count(*) from exportstaging where Weiss <> 'NR'),2) from exportstaging B where B.weissrank < A.weissrank)
+WHERE A.Weiss<>'NR';
 
 UPDATE exportstaging A
 SET DemotechRank=7,
