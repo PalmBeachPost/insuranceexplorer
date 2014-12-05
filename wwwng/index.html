@@ -13,14 +13,22 @@
 	    <link type="text/css" rel="stylesheet" href="./style/style.css"/>
 	</head>
 	<body ng-app="InsuranceExplorerApp">
+		<section id="bar">
+			<a href="http://mypalmbeachpost.com">
+				<img id="pbpostlogo" src="http://apps.mypalmbeachpost.com/potreport/Content/images/pbp-logo.png"/>
+			</a>
+		</section>
 		<article id="container">
 			<div id="header">
-				<img id="logo" src="./icons/logo.png"/>
-				<h1>Insurance Explorer</h1>
+				<img id="logo" src="./icons/logo.png"/>				
+				<h1>Insurance Explorer</h1>				
+        		<div class="credits">By: <a href="http://www.palmbeachpost.com/staff/charles-elmore/">Charles Elmore</a>
+         			&amp; <a href="http://www.palmbeachpost.com/staff/kavya-sukumar/">Kavya Sukumar</a>
+         		</div>
 			</div>
+			<div id="error" style="color:red"> Error messages:</div>
 			<div class="viewholder" ng-view></div>
 		</article>
 		<script type="text/javascript" src="./scripts/chartscript.js"></script>
 		<script type="text/javascript" src="./scripts/mycontroller.js"></script>
-	</body>
 </html>

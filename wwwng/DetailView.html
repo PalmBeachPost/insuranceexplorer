@@ -13,6 +13,9 @@
         <div id="demotechgauge" class="gauge"></div>
         <div id="complaintsper10kgauge" class="gauge"></div>
     </section>
+    <section id="caveat" ng-show="isASI">
+        <p>Note - The state database lists only 14 residential policies for the company, creating a high ratio of complaints to customers. A statement from regulators in October 2014 put its policies in force at more than 142,000 in Florida, but these lender-placed policies are classified as commercial non-residential.</p>
+    </section>
     <h3 ng-show="hasCharts">Policies and complaints</h3>
     <section id="charts">
         <div id="policycountchart" class="chart"></div>

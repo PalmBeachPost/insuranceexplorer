@@ -14,8 +14,12 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
      }
      dataService.getDetails = function(id){
         currentId = id;
-        if(dataset.data){
-            currentcompany.data = dataset.data[currentId];
+        if(dataset.data){            
+            currentcompany.data = $.grep(dataset.data,function(a){ return a.id == id;});
+            if(currentcompany.data)
+            {
+                currentcompany.data=currentcompany.data[0];
+            }
         }
         return currentcompany;
      }
@@ -35,13 +39,38 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
             redirectTo: '/'
        });
  }])
-.controller('TableCtrl', function ($scope, companyList, $http) {   
+.controller('TableCtrl', function ($scope, $filter, companyList, $http) {   
     $scope.companies = companyList.getCompanies(); 
+
+    var sortOrders= {
+        "name":false,
+        "weissrank":false,
+        "demotechrank":false,
+        "policycount": true,
+        "total_complaints":true,
+        "complaintpercentile":false
+    }
+    var sortedBy = {"field":null,"order":false};
+    var orderBy = $filter('orderBy');
+    $scope.sortTable = function(field){
+        $scope.companies.data = orderBy($scope.companies.data, field, sortOrders[field]);
+        sortedBy.field = field;
+        sortedBy.order = sortOrders[field];
+        sortOrders[field] = !sortOrders[field];
+    };
+
+    $scope.isSorted = function(field){
+        return sortedBy.field == field;
+    };
+    $scope.isAscending = function(field){
+        return sortOrders[field];
+    };
 })
 .controller('DetailCtrl', function ($scope, companyList, $http,$routeParams) {
     $scope.hasCharts=false;
-    $scope.currentcompanyid = parseInt($routeParams.companyId)-1;  
+    $scope.currentcompanyid = parseInt($routeParams.companyId);  
     $scope.companyref = companyList.getDetails($scope.currentcompanyid);
+    $(window).scrollTop(0);
 
     $scope.dataLoaded = function () {
         return companyList.getDetails($scope.currentcompanyid).data !==null;
@@ -80,6 +109,8 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
             drawGauge('#demotechgauge',0,6,7-parseInt($scope.companyref.data.demotechrank),$scope.companyref.data.demotech,"Demotech Rating");
             drawGauge('#complaintsper10kgauge',0,100,100-parseFloat($scope.companyref.data.complaintpercentile),
                $scope.companyref.data.complaints_per_10k,"Customer Satisfaction (complaints/10,000 policies)");
+            $scope.isASI = $scope.companyref.data.name=="American Security Insurance Co.";
         }
+
     });
 });

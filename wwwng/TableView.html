@@ -1,4 +1,24 @@
  <section  ng-controller="TableCtrl">
+    <article>
+        <p>Welcome to The Palm Beach Post’s property insurance guide.</p>
+        <p> Below you will find financial strength grades from two rating organizations, plus the Post’s analysis of state records showing who generates the most complaints.</p>
+        <p>Search by company. <span class="hide-S">Click on the table headers to sort.</span> Click for more information on each. Or just browse the whole list. 
+        Scroll down to get started!</p>
+
+        <h3>What the Ratings Mean</h3>
+        <p><b>Weiss Ratings, Jupiter</b> — A+ means top financial strength including ability to pay claims, E means weakest. Weiss has been rating property and casualty insurers since 1993 and does not take money from insurers. It says its ratings are consumer-oriented. Ratings are for the latest quarter available.  Website: weissratings.com</p>
+
+        <p><b>Demotech, Inc., Dublin, Ohio</b> — A'' is its top financial strength rating, followed by A' and A, and others. NR means not rated by Demotech. Incorporated in 1985, Demotech plays an important role in determining which insurers are considered acceptable in the mortgage lending marketplace. It does not rate state-run Citizens, and covers some but not all affiliates of large, national insurers. Ratings are the latest available on its website: demotech.com</p>
+
+        <p><b>Complaint rating</b> — This is a ranking based on number of complaints relative to a company’s number of customers.
+        <ul id="ratinglegend">
+            <li><img src="./icons/icon1.png"/> : Companies with the fewest complaints per capita, ranking in the top third in the state.</li>
+            <li><img src="./icons/icon2.png"/> : Companies ranking in the middle third in the state on complaints per capita.</li>
+            <li><img src="./icons/icon3.png"/> : Bottom third of the companies with the worst complaints per capita ratio.</li>
+            <li><img src="./icons/icon.png"/> : No complaint data available.</li>
+        </ul>
+        <p><b>Notes</b> —  Complaints are for an 18 month period ended June 30, 2014. Customer count is the number of residential customers in Florida as of June 30. State ranking in market share may vary from county share. Complaints represent those logged by the Florida Department of Financial Services, as obtained by The Palm Beach Post in a records request. State officials consider complaints to include requests for mediation of claims.</p>
+    </article>
     <section id="search">
         <p>Search: </p>
         <input id="searchbox" type="text" ng-model="search.name" placeholder="Search by company name">
@@ -6,23 +26,56 @@
     <table id="Table1" class="display order-column nowrap">
             <thead>             
                 <tr>
-                    <th ng-click="sortby='name'; namerev=!namerev; reverse=namerev" ng-init="namerev=true">Company</th>
-                    <th ng-click="sortby='weissrank'; weissrev=!weissrev; reverse=weissrev" ng-init="weissrev=true">Weiss</th>
-                    <th ng-click="sortby='demotechrank'; demrev=!demrev; reverse=demrev" ng-init="demrev=true">Demotech</th>
-                    <th ng-click="sortby='policycount'; policyrev=!policyrev; reverse=policyrev" ng-init="policyrev=true"># Policies</th> 
-                    <th ng-click="sortby='total_complaints'; reverse=!reverse"># Complaints</th> 
-                    <th ng-click="sortby='complaintpercentile'; reverse=!reverse">Complaint rating</th> 
+                    <th ng-class="{'sorted':isSorted('name'),
+                                 'ascending':isAscending('name'),
+                                 'descending':!isAscending('name')}"
+                         ng-click="sortTable('name')">
+                         Company
+                     </th>
+                    <th ng-class="{'sorted':isSorted('weissrank'),
+                                 'ascending':isAscending('weissrank'),
+                                 'descending':!isAscending('weissrank')}"
+                         ng-click="sortTable('weissrank')">
+                         Weiss
+                     </th>
+                    <th ng-class="{'sorted':isSorted('demotechrank'),
+                                 'ascending':isAscending('demotechrank'),
+                                 'descending':!isAscending('demotechrank')}"
+                        ng-click="sortTable('demotechrank')">
+                        Demotech
+                    </th>
+                    <th ng-class="{'sorted':isSorted('policycount'),
+                                 'ascending':isAscending('policycount'),
+                                 'descending':!isAscending('policycount')}"
+                        ng-click="sortTable('policycount')">
+                        # Policies
+                    </th> 
+                    <th ng-class="{'sorted':isSorted('total_complaints'),
+                                 'ascending':isAscending('total_complaints'),
+                                  'descending':!isAscending('total_complaints')}"
+                      ng-click="sortTable('total_complaints')">
+                      # Complaints
+                    </th> 
+                    <th ng-class="{'sorted':isSorted('complaintpercentile'),
+                                 'ascending':isAscending('complaintpercentile'),
+                                 'descending':!isAscending('complaintpercentile')}"
+                         ng-click="sortTable('complaintpercentile')">
+                         Complaint rating
+                     </th> 
                 </tr>           
             </thead>
-             <tr ng-repeat="company in companies.data| filter:search | orderBy:sortby:reverse">
+             <tr ng-repeat="company in companies.data| filter:search">
                 <td class="compName"><a href="#/detail/{{company.id}}">{{company.name}}</a></td>
                 <td>{{company.weiss}}</td>
                 <td>{{company.demotech}}</td>
                 <td>{{company.policycount_display.replace('.',',')}}</td>
                 <td>{{company.total_complaints_display.replace('.',',')}}</td>
-                <td><img class="ratingicon" src="./icons/icon{{company.complaintpercentilegroup}}.png" alt="test"/></td>
+                <td><img class="ratingicon" src="./icons/icon{{company.complaintpercentilegroup}}.png"/></td>
              </tr>
         </table>
         <hr/>
-       <p>Customer Satisfaction designed by <a href="http://www.thenounproject.com/Luis">Luis Prado</a> from the <a href="http://www.thenounproject.com">Noun Project</a></p>
+        <footer id="footercredits">
+            <p><b>Icons from <a href="http://www.thenounproject.com">Noun Project</a></p></b><p>
+            <p>Main logo designed by <a href="http://thenounproject.com/Fhlcreative/">Phil Goodwin.</a> Rating icons designed by <a href="http://thenounproject.com/tobiasfabian/">Tobias F. Wolf</a></p>
+        </footer>
 </section>
