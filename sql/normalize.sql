@@ -26,7 +26,7 @@ SELECT
 FROM rawweiss2014;
 
 
-INSERT INTO Companies
+/*INSERT INTO Companies
 (
 	Name,
 	GrpName
@@ -41,7 +41,7 @@ WHERE NOT EXISTS
 	SELECT * FROM Companies
 	WHERE Companies.name = rawdemotech.name
 );
-
+*/
 -------------------------------------------------------
 INSERT INTO WeissRating
 (Rating, Rank)
@@ -160,3 +160,66 @@ SET PolicyCount = (
 	AND C.id = Q.id
 	)
 WHERE C.policycount IS NULL;
+
+
+-------------------------------------------
+UPDATE Companies
+SET policycount = 381284
+Where name like 'STATE FARM FLORIDA INSURANCE COMPANY';
+
+INSERT INTO Companies
+(
+  name,
+  address,
+  city,
+  domicilestate,
+  zip,
+  phone,
+  webaddress
+)
+VALUES
+(
+'Mount Beacon Insurance Company',
+'7785 66th Street North',
+'Pinellas Park',
+'FL',
+'33781',
+'(844) 279-7312',
+'www.mountbeaconinsurance.net'
+);
+
+INSERT INTO Weiss2014
+VALUES(119,'NR');
+
+INSERT INTO demotech2014
+VALUES(119,'FSR - A');
+
+INSERT INTO Companies
+(
+  name,
+  address,
+  city,
+  domicilestate,
+  zip,
+  phone,
+  webaddress,
+  policycount
+)
+VALUES
+(
+'Elements Property Insurance Co.',
+'2367 Centerville Road, First Floor',
+'TALLAHASSEE',
+'FL',
+'32308',
+'(866) 726-3491',
+'www.elements-ins.com',
+16359
+);
+
+
+INSERT INTO Weiss2014
+VALUES(120,'NR');
+
+INSERT INTO demotech2014
+VALUES(120,'FSR - A');

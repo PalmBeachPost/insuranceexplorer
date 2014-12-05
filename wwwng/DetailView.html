@@ -1,0 +1,24 @@
+ <section  ng-controller="DetailCtrl">
+   <a id="backbtn" href="./">< Home</a>
+   <h2>{{companyref.data.name}}</a></h2>
+    <address>{{companyref.data.address}}, {{companyref.data.city}}, {{companyref.data.state}} {{companyref.data.zip}} 
+    	<a href="http://map.google.com?q={{companyref.data.address}},{{companyref.data.city}},{{companyref.data.state}} {{companyref.data.zip}}" target="blank">(map)</a>
+    </address>
+    <div id="contact">
+    	<a href="{{companyref.data.webaddress}}" target="blank">Website</a> | {{companyref.data.phone}}
+    </div>
+    <h3>Ratings</h3>
+    <section id="gauges">
+        <div id="weissgauge" class="gauge"></div>
+        <div id="demotechgauge" class="gauge"></div>
+        <div id="complaintsper10kgauge" class="gauge"></div>
+    </section>
+    <section id="caveat" ng-show="isASI">
+        <p>Note - The state database lists only 14 residential policies for the company, creating a high ratio of complaints to customers. A statement from regulators in October 2014 put its policies in force at more than 142,000 in Florida, but these lender-placed policies are classified as commercial non-residential.</p>
+    </section>
+    <h3 ng-show="hasCharts">Policies and complaints</h3>
+    <section id="charts">
+        <div id="policycountchart" class="chart"></div>
+        <div id="complaintcountchart" class="chart"></div>
+    </section>
+</section>
