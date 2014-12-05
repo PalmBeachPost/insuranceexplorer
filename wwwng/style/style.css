@@ -37,6 +37,27 @@ h1{
 	font-weight: 100;
 	color: #333;
 }
+table{
+	width:	100%;
+}
+#collapsableheader h3{
+	text-transform: uppercase;
+	display: inline-block;
+	margin: 0px;
+}
+#collapsable{
+	margin-bottom: 20px;
+}
+#collapsableheader{	
+	background-color: #eee;
+	padding: 0;
+	padding-left: 10px;
+	border-bottom: 1px solid cornflowerblue;
+	border-top: 1px solid cornflowerblue;
+}
+.notes{
+	font-size: .8em;
+}
 #subtitle{
 	display: inline-block;
 	background-color: cornflowerblue;
@@ -56,13 +77,13 @@ h1{
 .credits{	
 	text-align: right;
 }
-.credits a{
+.credits a, .highlightlink{
 	text-decoration: none;
 	color: currentcolor;
 	background-color: #eee;
 	padding:3px;
 }
-.credits a:hover,#backbtn:hover{
+.credits a:hover,#backbtn:hover,.highlightlink:hover{
 	color: cornflowerblue;
 	background-color: #333;
 }
@@ -94,6 +115,11 @@ th.sorted.descending:after{
 tr:nth-child(even) {
 background-color: ghostwhite;
 }
+thead tr th {
+border-bottom: 1px solid cornflowerblue;
+border-top: 1px solid cornflowerblue;
+cursor: pointer;
+}
 #backbtn{
 	text-decoration: none;
 	color: currentcolor;
@@ -108,8 +134,11 @@ background-color: ghostwhite;
 	margin-left: 5px;
 	margin-bottom: 10px;
 	max-width: 70%;
+	height: 25px;
 }
-
+.bolder{
+	font-weight: bold;
+}
 .gauge{
 	height:300px;
 	width:30%;
@@ -164,6 +193,7 @@ footer{
 	}
 	h1{
 		font-size: 2em;
+		font-weight: bold;
 	}
 	table, thead, tbody, th, td, tr { 
 		display: block; 
@@ -235,6 +265,7 @@ footer{
 	}
 	h1{
 		font-size: 1.6em;
+		font-weight: 400;
 	}
 	.credits{
 		margin-top: 10px;

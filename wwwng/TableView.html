@@ -1,26 +1,31 @@
  <section  ng-controller="TableCtrl">
     <article>
-        <p>Welcome to The Palm Beach Post’s property insurance guide.</p>
+        <h2 class="bolder">Welcome to The Palm Beach Post’s property insurance guide.</h2>
         <p> Below you will find financial strength grades from two rating organizations, plus the Post’s analysis of state records showing who generates the most complaints.</p>
-        <p>Search by company. <span class="hide-S">Click on the table headers to sort.</span> Click for more information on each. Or just browse the whole list. 
+        <p>Read the full report <a class="highlightlink" href="http://www.mypalmbeachpost.com/news/business/special-report-how-safe-is-your-florida-property-i/njL5K/#1bb79b6f.3802568.735572" target="blank">here.</a>
+        <p>Search by company. <span class="hide-S">Click on the table headers to sort.</span> Click company names for more information on each. Or just browse the whole list. 
         Scroll down to get started!</p>
 
-        <h3>What the Ratings Mean</h3>
-        <p><b>Weiss Ratings, Jupiter</b> — A+ means top financial strength including ability to pay claims, E means weakest. Weiss has been rating property and casualty insurers since 1993 and does not take money from insurers. It says its ratings are consumer-oriented. Ratings are for the latest quarter available.  Website: weissratings.com</p>
+        <div id="collapsable" >
+            <div id="collapsableheader" ng-class="{'expanded': expand}" ng-click="expand=!expand"><h3>What the Ratings Mean</h3> (click to <span ng-hide='expand'>see more</span><span ng-show='expand'>collapse</span>)</div>
+            <div id="collapsablebody" ng-show='expand'>
+                <p><b>Weiss Ratings, Jupiter</b> — A+ means top financial strength including ability to pay claims, E means weakest. Weiss has been rating property and casualty insurers since 1993 and does not take money from insurers. It says its ratings are consumer-oriented. Ratings are for the latest quarter available.  Website: weissratings.com</p>
 
-        <p><b>Demotech, Inc., Dublin, Ohio</b> — A'' is its top financial strength rating, followed by A' and A, and others. NR means not rated by Demotech. Incorporated in 1985, Demotech plays an important role in determining which insurers are considered acceptable in the mortgage lending marketplace. It does not rate state-run Citizens, and covers some but not all affiliates of large, national insurers. Ratings are the latest available on its website: demotech.com</p>
+                <p><b>Demotech, Inc., Dublin, Ohio</b> — A'' is its top financial strength rating, followed by A' and A, and others. NR means not rated by Demotech. Incorporated in 1985, Demotech plays an important role in determining which insurers are considered acceptable in the mortgage lending marketplace. It does not rate state-run Citizens, and covers some but not all affiliates of large, national insurers. Ratings are the latest available on its website: demotech.com</p>
 
-        <p><b>Complaint rating</b> — This is a ranking based on number of complaints relative to a company’s number of customers.
-        <ul id="ratinglegend">
-            <li><img src="./icons/icon1.png"/> : Companies with the fewest complaints per capita, ranking in the top third in the state.</li>
-            <li><img src="./icons/icon2.png"/> : Companies ranking in the middle third in the state on complaints per capita.</li>
-            <li><img src="./icons/icon3.png"/> : Bottom third of the companies with the worst complaints per capita ratio.</li>
-            <li><img src="./icons/icon.png"/> : No complaint data available.</li>
-        </ul>
-        <p><b>Notes</b> —  Complaints are for an 18 month period ended June 30, 2014. Customer count is the number of residential customers in Florida as of June 30. State ranking in market share may vary from county share. Complaints represent those logged by the Florida Department of Financial Services, as obtained by The Palm Beach Post in a records request. State officials consider complaints to include requests for mediation of claims.</p>
+                <p><b>Complaint rating</b> — This is a ranking based on number of complaints relative to a company’s number of customers.
+                <ul id="ratinglegend">
+                    <li><img src="./icons/icon1.png"/> : Companies with the fewest complaints per capita, ranking in the top third in the state.</li>
+                    <li><img src="./icons/icon2.png"/> : Companies ranking in the middle third in the state on complaints per capita.</li>
+                    <li><img src="./icons/icon3.png"/> : Bottom third of the companies with the worst complaints per capita ratio.</li>
+                    <li><img src="./icons/icon.png"/> : No complaint data available.</li>
+                </ul>
+                <p class="notes"><b>Notes</b> —  Complaints are for an 18 month period ended June 30, 2014. Customer count is the number of residential customers in Florida as of June 30. State ranking in market share may vary from county share. Complaints represent those logged by the Florida Department of Financial Services, as obtained by The Palm Beach Post in a records request. State officials consider complaints to include requests for mediation of claims.</p>
+            <div>
+        </div>
     </article>
     <section id="search">
-        <p>Search: </p>
+        <p class="bolder">Search: </p>
         <input id="searchbox" type="text" ng-model="search.name" placeholder="Search by company name">
     </section>
     <table id="Table1">
