@@ -62,7 +62,7 @@ h1{
 	background-color: #eee;
 	padding:3px;
 }
-.credits a:hover{
+.credits a:hover,#backbtn:hover{
 	color: cornflowerblue;
 	background-color: #333;
 }
@@ -107,6 +107,7 @@ background-color: ghostwhite;
 	width: 434px;
 	margin-left: 5px;
 	margin-bottom: 10px;
+	max-width: 70%;
 }
 
 .gauge{

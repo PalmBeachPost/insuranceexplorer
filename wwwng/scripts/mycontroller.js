@@ -8,7 +8,7 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
      $http.get("data/data.json").success(function (data, status, headers, config) {
         dataset.data = data;
         currentcompany.data = data[currentId];
-     }); 
+     });
      dataService.getCompanies = function () {
          return dataset;
      }
@@ -39,7 +39,7 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
             redirectTo: '/'
        });
  }])
-.controller('TableCtrl', function ($scope, $filter, companyList, $http) {   
+.controller('TableCtrl', function ($scope, $filter, companyList, $http) {  
     $scope.companies = companyList.getCompanies(); 
 
     var sortOrders= {
