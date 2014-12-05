@@ -173,12 +173,27 @@ td{
 footer{
 	font-size: .7em;
 }
+.share-this{
+	margin-bottom: 20px;
+}
+.share-this-small{
+		display: none;
+}
+.share-this-large{
+	display: block;
+}
 @media only screen and (max-width : 768px) {	
 	#container{
 		width:99%;
 	}	
 	.chart{
 		width:100%;
+	}
+	.share-this-large{
+		display: none;
+	}
+	.share-this-small{
+		display: block;
 	}
 }
 @media only screen and (max-width : 640px) {
