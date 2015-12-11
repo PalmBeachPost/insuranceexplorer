@@ -5,7 +5,7 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
      var currentId = 1;
      var dataService = {};
      
-     $http.get("data/data.json").success(function (data, status, headers, config) {
+     $http.get("data/data_0501.json").success(function (data, status, headers, config) {
         dataset.data = data;
         currentcompany.data = data[currentId];
      });
@@ -19,24 +19,24 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
             if(currentcompany.data)
             {
                 currentcompany.data=currentcompany.data[0];
-            }
+            }        return currentcompany;
+
         }
-        return currentcompany;
      }
     return dataService;
   })
- .config(['$routeProvider', function ($routeProvider) {
+.config(['$routeProvider', function ($routeProvider) {
      $routeProvider
        .when('/', {
-            templateUrl: '/TableView.html',
+            templateUrl: 'http://host.coxmediagroup.com/wpb/editorial/insuranceexplorer-test/TableView.html',
             controller: 'TableCtrl'
         })
        .when('/detail/:companyId', {
            controller: 'DetailCtrl',
-           templateUrl: '/DetailView.html'
+           templateUrl: 'http://host.coxmediagroup.com/wpb/editorial/insuranceexplorer-test/DetailView.html'
         })
        .otherwise({
-            redirectTo: '/'
+            redirectTo: 'http://host.coxmediagroup.com/wpb/editorial/insuranceexplorer-test'
        });
  }])
 .controller('TableCtrl', function ($scope, $filter, companyList, $http) {  
@@ -46,7 +46,7 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
         "name":false,
         "weissrank":false,
         "demotechrank":false,
-        "policycount": true,
+        "policycount":true,
         "total_complaints":true,
         "complaintpercentile":false
     }
@@ -91,23 +91,41 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
                 $chartdata.quarters.push("2014 Q2");
                 $chartdata.policycounts.push($scope.companyref.data.q2_2014_policycount);
             }
+            if($scope.companyref.data.q3_2014_policycount){
+                $chartdata.quarters.push("2014 Q3");
+                $chartdata.policycounts.push($scope.companyref.data.q3_2014_policycount);
+            }            
+            if($scope.companyref.data.q4_2014_policycount){
+                $chartdata.quarters.push("2014 Q4");
+                $chartdata.policycounts.push($scope.companyref.data.q4_2014_policycount);
+            }
+			if($scope.companyref.data.q1_2015_policycount){
+                $chartdata.quarters.push("2015 Q1");
+                $chartdata.policycounts.push($scope.companyref.data.q1_2015_policycount);
+            }
+			if($scope.companyref.data.q2_2015_policycount){
+                $chartdata.quarters.push("2015 Q2");
+                $chartdata.policycounts.push($scope.companyref.data.q2_2015_policycount);
+            }			
             if($chartdata.quarters.length > 1){
                 drawChart('#policycountchart',$chartdata.quarters,'Quarters', $chartdata.policycounts, 'No. of policies', 'Policy Count');
                 $scope.hasCharts=true;
             }
-            if($scope.companyref.data.q4_2013_complaintcount && $scope.companyref.data.total_2014_complaintcount){
+            if($scope.companyref.data.total_2013_complaintcount && $scope.companyref.data.total_2014_complaintcount){
                 var $actual = [];
-                $actual.push($scope.companyref.data.q4_2013_complaintcount);
+                $actual.push($scope.companyref.data.total_2013_complaintcount);
                 $actual.push($scope.companyref.data.total_2014_complaintcount);
-                var $predicted =[0];
-                $predicted.push($scope.companyref.data.total_2014_complaintcount);
+
+                // var $predicted =[0];
+                // $predicted.push($scope.companyref.data.total_2014_complaintcount);
                 drawStacks('#complaintcountchart',['2013','2014'],'No. of Complaints',
-                    $predicted,'Estimated',$actual,'Actual','Complaint count');
+                    // $predicted,'Estimated',
+                    $actual,'Actual','Complaint count');
                 $scope.hasCharts=true;
             }            
             drawGauge('#weissgauge',0,13,14-parseInt($scope.companyref.data.weissrank),$scope.companyref.data.weiss,"Weiss Rating");
             drawGauge('#demotechgauge',0,6,7-parseInt($scope.companyref.data.demotechrank),$scope.companyref.data.demotech,"Demotech Rating");
-            drawGauge('#complaintsper10kgauge',0,100,100-parseFloat($scope.companyref.data.complaintpercentile),
+            drawGauge('#complaintsper10kgauge',0,100,(100-parseFloat($scope.companyref.data.complaintpercentile)),
                $scope.companyref.data.complaints_per_10k,"Customer Satisfaction (complaints/10,000 policies)");
             $scope.isASI = $scope.companyref.data.name=="American Security Insurance Co.";
         }

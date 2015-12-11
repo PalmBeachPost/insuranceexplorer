@@ -1,5 +1,5 @@
 function drawChart ($selector,$xData,$xName,$yData,$yName,$title){
-	$($selector).highcharts({
+  $($selector).highcharts({
         chart: {
             type: 'line'
         },
@@ -15,15 +15,15 @@ function drawChart ($selector,$xData,$xName,$yData,$yName,$title){
             tickLength: 0
         },
         yAxis: [
-	        {
-	        	title: $yName
-	        }
+          {
+            title: $yName
+          }
         ],
         series :[
-	        {
-	        	name: $yName,
-	        	data:  $yData
-	        }
+          {
+            name: $yName,
+            data:  $yData
+          }
         ]
     });
 }
@@ -62,15 +62,16 @@ function drawStacks($selector,$xData,$xName,$y1Data,$y1Name,$y2Data,$y2Name,$tit
             align: 'center',
             verticalAlign: 'bottom',
             backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
-            borderColor: '#CCC',
-            borderWidth: 1,
+            // borderColor: '#CCC',
+            // borderWidth: 1,
             shadow: false
         },
         tooltip: {
             formatter: function () {
                 return '<b>' + this.x + '</b><br/>' +
-                    this.series.name + ': ' + this.y + '<br/>' +
-                    'Total: ' + this.point.stackTotal;
+                    this.series.name + ': ' + this.y + '<br/>' 
+                    // +
+                    // 'Total: ' + this.point.stackTotal;
             }
         },
         plotOptions: {
@@ -79,32 +80,32 @@ function drawStacks($selector,$xData,$xName,$y1Data,$y1Name,$y2Data,$y2Name,$tit
                 }
         },
         series: [{
-            name: 'Estimated for the whole year',
+            name: 'Complaints',
             data: $y1Data,
-            color:'#CCC'
-        },{
-            name: 'Actual',
-            data: $y2Data
+            // color:'#CCC'
+        // },{
+        //     name: 'Actual',
+        //     data: $y2Data
         }]
     });
 };
 
 function drawGauge ($selector,$min,$max,$value,$text,$title){
-	$($selector).highcharts({
-		 chart: {
+  $($selector).highcharts({
+     chart: {
             type: 'solidgauge'
         },
         title:{ 
-        	text: $title,        	
+          text: $title,         
             verticalAlign: 'bottom',
             y:-60
-    	},
-    	tooltip:{
-    		enabled:false
-    	},
-    	credits:{
-    		enabled:false
-    	},
+      },
+      tooltip:{
+        enabled:false
+      },
+      credits:{
+        enabled:false
+      },
         pane: {
             center: ['50%', '50%'],
             size: '100%',
@@ -124,7 +125,7 @@ function drawGauge ($selector,$min,$max,$value,$text,$title){
                 [0.9, '#55BF3B'] 
             ],
             labels: {
-            	enabled:false
+              enabled:false
             },
             lineWidth: 0,
             minorTickInterval: null,
@@ -134,14 +135,14 @@ function drawGauge ($selector,$min,$max,$value,$text,$title){
             max:$max
         },
         series:[{
-        	data:[$value],
-        	dataLabels: {
-        		borderWidth:0,
-        		format: '<div style="text-align:center"><span style="font-size:25px;">'+$text+'</span></div>',
-        		y:-20
-        	}
+          data:[$value],
+          dataLabels: {
+            borderWidth:0,
+            format: '<div style="text-align:center"><span style="font-size:25px;">'+$text+'</span></div>',
+            y:-20
+          }
         }]
-	})
+  })
 }
 
 function drawGaugeReverse ($selector,$min,$max,$value,$text,$title){

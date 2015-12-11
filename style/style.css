@@ -141,7 +141,7 @@ cursor: pointer;
 }
 .gauge{
   height:300px;
-  width:30%;
+  width:21%;
   display: inline-block;
 }
 .chart{
