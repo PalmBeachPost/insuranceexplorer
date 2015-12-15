@@ -6,6 +6,7 @@
 *.user
 *.sln.docstates
 old/
+node_modules
 
 # Build results
 [Dd]ebug/
