@@ -3,7 +3,7 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 2,Universal Property & Casualty Insurance Co.,1110 West Commercial Boulevard,Fort Lauderdale,FL,33309,954-958-1200,,D-,12,A,3,NR,33,531619,"531,619",499040,491174,493810,500503,491174,493810,531619,"1,165",1165,730,435,21.9,81,3,f
 3,State Farm Florida Insurance Co.,One State Farm Plaza,Bloomington,IL,61710,309-766-6393,,C,8,NR,7,B+,11,344915,"344,915",389109,0,0,0,0,0,344915,499,499,499,0,14.5,64,2,f
 4,Security First Insurance Co.,140 South Atlantic Avenue  Suite 200,Ormond Beach,FL,32176,386-673-5308,,C+,7,A,3,NR,33,246327,"246,327",176337,176087,178697,192058,176087,178697,246327,680,680,418,262,27.6,92,3,f
-5,Heritage Property & Casualty Insurance Co.,Ernie Garateix,Clearwater,FL,33759,727-362-7205,,NR,13,A,3,NR,33,223417,"223,417",133168,140903,171483,173512,140903,171483,223417,186,186,60,126,8.3,41,2,f
+5,Heritage Property & Casualty Insurance Co.,Ernie Garateix,Clearwater,FL,33759,727-362-7205,,C,8,A,3,NR,33,223417,"223,417",133168,140903,171483,173512,140903,171483,223417,186,186,60,126,8.3,41,2,f
 6,Federated National Insurance Co.,"14050 N.W. 14Th Street, Suite 180",Sunrise,FL,33323,800-293-2532,,C-,9,A,3,NR,33,212490,"212,490",116401,134081,152604,167597,134081,152604,212490,204,204,107,97,9.6,46,2,f
 7,American Integrity Insurance Co. Of Florida,"5426 Bay Center Drive, Suite 650",Tampa,FL,33609,813-880-7003,,D+,10,A,3,NR,33,206795,"206,795",179879,182673,189995,192131,182673,189995,206795,371,371,198,173,17.9,73,3,f
 8,United Property & Casualty Insurance Co.,"360 Central Avenue, Suite 900",St. Petersburg,FL,33701,727-895-7737-273,,C,8,A,3,NR,33,170006,"170,006",163314,160832,159191,156696,160832,159191,170006,292,292,140,152,17.2,70,3,f
@@ -17,7 +17,7 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 16,ASI Preferred Insurance Corp.,1 Asi Way,St. Petersburg,FL,33702-2514,727-821-8765,,C,8,A'',1,A,5,113562,"113,562",99265,102139,105312,107695,102139,105312,113562,39,39,24,15,3.4,23,1,f
 17,Florida Family Insurance Co.,"27599 Riverview Center Blvd., Suite 100",Bonita Springs,FL,34134-4323,239-495-4700,,C,8,A',2,B++,9,106767,"106,767",104189,105143,106005,106217,105143,106005,106767,59,59,28,31,5.5,31,1,f
 18,Castle Key Indemnity Co.,"3075 Sanders Road, Suite H1E",Northbrook,IL,60062-7127,800-386-6126,,B,5,A',2,B-,15,105274,"105,274",107634,106897,107040,107771,106897,107040,105274,117,117,76,41,11.1,52,2,f
-19,Ark Royal Insurance Co.,1 Asi Way,St. Petersburg,FL,33702,866-509-0314,,NR,13,A,3,NR,33,98127,"98,127",88156,91188,93885,95893,91188,93885,98127,58,58,32,26,5.9,32,1,f
+19,Ark Royal Insurance Co.,1 Asi Way,St. Petersburg,FL,33702,866-509-0314,,C-,9,A,3,NR,33,98127,"98,127",88156,91188,93885,95893,91188,93885,98127,58,58,32,26,5.9,32,1,f
 20,Tower Hill Signature Insurance Co.,7201 N.W. 11Th Place,Gainesville,FL,32605,352-333-1362,,D,11,A,3,NR,33,95716,"95,716",100165,99946,99276,98566,99946,99276,95716,210,210,148,62,21.9,81,3,f
 21,Olympus Insurance Co.,4200 Northcorp Parkway Suite 400,Palm Beach Gardens,FL,33410,561-231-5902,,D+,10,A,3,NR,33,89087,"89,087",70207,70800,74034,76276,70800,74034,89087,182,182,95,87,20.4,78,3,f
 22,Castle Key Insurance Co.,"3075 Sanders Road, Suite H1E",Northbrook,IL,60062-7127,800-386-6126,,B-,6,A',2,B-,15,84748,"84,748",98016,95823,93432,90905,95823,93432,84748,299,299,199,100,35.3,96,3,f
@@ -47,7 +47,7 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 46,Liberty Mutual Fire Insurance Co.,175 Berkeley Street,Boston,MA,2116,617-357-9500,,C+,7,NR,7,A,5,36727,"36,727",41377,40272,39259,38387,40272,39259,36727,95,95,69,26,25.9,88,3,f
 47,Elements Property Insurance Co.,"2367 Centerville Road, 1St Floor",Tallahassee,FL,32308,0,,B-,6,A,3,NR,33,36641,"36,641",8447,13585,16443,15814,13585,16443,36641,11,11,0,11,3,21,1,f
 48,Foremost Insurance Co.,P.O. Box 2450,Grand Rapids,MI,49501-2450,818-965-0433,,B,5,NR,7,A,5,35388,"35,388",37155,36121,35582,35320,36121,35582,35388,41,41,28,13,11.6,54,2,f
-49,Nationwide Insurance Co. Of Florida,"One West Nationwide Blvd., 3-04-101",Columbus,OH,43215-2220,800-882-2822,,NR,13,A,3,B+,11,32690,"32,690",36931,36095,35134,34360,36095,35134,32690,88,88,63,25,26.9,90,3,f
+49,Nationwide Insurance Co. Of Florida,"One West Nationwide Blvd., 3-04-101",Columbus,OH,43215-2220,800-882-2822,,C+,7,A,3,B+,11,32690,"32,690",36931,36095,35134,34360,36095,35134,32690,88,88,63,25,26.9,90,3,f
 50,Federal Insurance Co.,202 Hall'S Mill Road,Whitehous,NJ,8889,908-572-5343,,B,5,NR,7,A++ u*,2,32380,"32,380",31598,31707,31938,31977,31707,31938,32380,10,10,4,6,3.1,22,1,f
 51,Prepared Insurance Co.,1715 N Westshore Blvd Suite 930,Tampa,FL,33607,813-286-3733,,C-,9,A,3,NR,33,31432,"31,432",19754,20588,21547,22488,20588,21547,31432,56,56,34,22,17.8,71,3,f
 52,First Community Insurance Co.,11101 Roosevelt Blvd. N,St. Petersburg,FL,33716,727-823-4000-4112,,C-,9,A,3,B+,11,30383,"30,383",33084,37029,34769,33757,37029,34769,30383,41,41,24,17,13.5,58,2,f
@@ -93,7 +93,7 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 92,Travelers Indemnity Co. Of America,"One Tower Square, Ms08A",Hartford,CT,6183,860-277-1248,,NR,13,NR,7,NR,33,1090,"1,090",1694,1665,1622,1573,1665,1622,1090,3,3,1,2,27.5,91,3,f
 93,Cincinnati Insurance Co.,6200 South Gilmore Road,Fairfield,OH,45014-5141,513-870-2646,,A-,3,NR,7,A+,3,989,989,6468,6238,5674,4349,6238,5674,989,4,4,2,2,-,,0,f
 94,Great Northern Insurance Co.,202 Hall'S Mill Road,Whitehouse Station,NJ,8889,908-572-5343,,B,5,NR,7,A++ u*,2,986,986,1056,1054,1037,1016,1054,1037,986,0,0,0,0,-,,0,f
-95,QBE Insurance Corp.,One General Drive,Sun Prairie,WI,53596,212-805-9700-8851,,NR,13,NR,7,NR,33,964,964,1084,1077,1072,1076,1077,1072,964,0,0,0,0,-,,0,f
+95,QBE Insurance Corp.,One General Drive,Sun Prairie,WI,53596,212-805-9700-8851,,D,11,NR,7,A,5,964,964,1084,1077,1072,1076,1077,1072,964,0,0,0,0,-,,0,f
 96,Merastar Insurance Co.,"50 Glenmaura National Blvd.,  Ste. 201",Moosic,PA,18507,570-596-2036,,B-,6,NR,7,A-,7,886,886,1208,1974,1988,1709,1974,1988,886,0,0,0,0,-,,0,f
 97,American Home Assurance Co.,"175 Water Street, 18Th Floor",New York,NY,10038,212-458-3732,,C+,7,NR,7,A,5,857,857,1003,980,959,939,980,959,857,3,3,2,1,-,,0,f
 98,Aegis Security Insurance Co.,2407 Park Drive Suite 200,Harrisburg,PA,17110,717-657-9671,,B-,6,NR,7,A,5,796,796,859,809,805,822,809,805,796,0,0,0,0,-,,0,f
