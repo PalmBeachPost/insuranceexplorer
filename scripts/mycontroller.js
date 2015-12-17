@@ -123,7 +123,7 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
                     $actual,'Actual','Complaint count');
                 $scope.hasCharts=true;
             }            
-            drawGauge('#weissgauge',0,12,13-parseInt($scope.companyref.data.weissrank),$scope.companyref.data.weiss,"Weiss Rating");
+            drawGauge('#weissgauge',0,15,16-parseInt($scope.companyref.data.weissrank),$scope.companyref.data.weiss,"Weiss Rating");
             drawGauge('#demotechgauge',0,6,7-parseInt($scope.companyref.data.demotechrank),$scope.companyref.data.demotech,"Demotech Rating");
 			drawGauge('#ambestgauge',0,32,33-parseInt($scope.companyref.data.ambestrank),$scope.companyref.data.ambest,"A.M. Best Rating");
             drawGauge('#complaintsper10kgauge',0,100,(100-parseFloat($scope.companyref.data.complaintpercentile)),
