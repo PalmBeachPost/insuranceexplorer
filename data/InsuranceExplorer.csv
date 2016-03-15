@@ -4,8 +4,8 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 3,State Farm Florida Insurance Co.,One State Farm Plaza,Bloomington,IL,61710,309-766-6393,http://www.statefarm.com,C,8,NR,7,B+,11,344763,"344,763",389109,0,0,0,0,0,344915,499,499,499,0,14.5,66,2,f
 4,Security First Insurance Co.,140 South Atlantic Avenue  Suite 200,Ormond Beach,FL,32176,386-673-5308,http://www.securityfirstflorida.com,C+,7,A,3,NR,33,265132,"265,132",176337,176087,178697,192058,176087,178697,246327,680,680,418,262,25.6,86,3,f
 5,Heritage Property & Casualty Insurance Co.,Ernie Garateix,Clearwater,FL,33759,727-362-7205,http://www.heritagepci.com,C,8,A,3,NR,33,247221,"247,221",133168,140903,171483,173512,140903,171483,223417,186,186,60,126,7.5,38,2,f
-6,Federated National Insurance Co.,"14050 N.W. 14Th Street, Suite 180",Sunrise,FL,33323,800-293-2532,http://www.fednat.com,C-,9,A,3,NR,33,231828,"231,828",116401,134081,152604,167597,134081,152604,212490,204,204,107,97,8.8,42,2,f
-7,American Integrity Insurance Co. Of Florida,"5426 Bay Center Drive, Suite 650",Tampa,FL,33609,813-880-7003,http://www.aiicfl.com,D+,10,A,3,NR,33,209581,"209,581",179879,182673,189995,192131,182673,189995,206795,371,371,198,173,17.7,73,3,f
+6,Federated National Insurance Co.,"14050 N.W. 14Th Street, Suite 180",Sunrise,FL,33323,800-293-2532,http://www.fednat.com,C,8,A,3,NR,33,231828,"231,828",116401,134081,152604,167597,134081,152604,212490,204,204,107,97,8.8,42,2,f
+7,American Integrity Insurance Co. Of Florida,"5426 Bay Center Drive, Suite 650",Tampa,FL,33609,813-880-7003,http://www.aiicfl.com,C-,9,A,3,NR,33,209581,"209,581",179879,182673,189995,192131,182673,189995,206795,371,371,198,173,17.7,73,3,f
 8,United Property & Casualty Insurance Co.,"360 Central Avenue, Suite 900",St. Petersburg,FL,33701,727-895-7737-273,http://www.upcinsurance.com,C,8,A,3,NR,33,172422,"172,422",163314,160832,159191,156696,160832,159191,170006,292,292,140,152,16.9,70,3,f
 9,St. Johns Insurance Co.,"6675 Westwood Blvd., Suite 360",Orlando,FL,32821,407-226-8460-601,http://www.stjohnsinsurance.com/,D,11,A,3,NR,33,169266,"169,266",170840,170467,171985,173166,170467,171985,169700,132,132,0,132,7.8,39,2,f
 10,American Bankers Insurance Co. Of Florida,11222 Quail Roost Drive,Miami,FL,33157-6596,305-253-2244-35421,http://www.assurant.com,B,5,NR,7,A,5,167279,"167,279",124003,129118,135716,144341,129118,135716,158241,63,63,34,29,3.8,27,1,f
@@ -13,7 +13,7 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 12,People's Trust Insurance Co.,18 People'S Trust Way,Deerfield Beach,FL,33441-6720,561-988-9170,http://www.peoplestrustinsurance.com,D+,10,A,3,NR,33,146128,"146,128",93882,119639,128295,132790,119639,128295,141705,322,322,125,197,22,83,3,f
 13,Tower Hill Prime Insurance Co.,7201 N.W. 11Th Place,Gainesville,FL,32605,352-333-1362,http://www.thig.com,D,11,A,3,A-,7,144845,"144,845",133369,135202,137771,139242,135202,137771,145186,265,265,164,101,18.3,76,3,f
 14,United Services Automobile Association,9800 Fredericksburg Road,San Antonio,TX,78288,800-531-8111,http://www.usaa.com,A-,3,NR,7,A++,1,123922,"123,922",128511,126802,125524,124834,126802,125524,123837,43,43,24,19,3.5,24,1,f
-15,Florida Peninsula Insurance Co.,P.O. Box 50969,Sarasota,FL,34232-9989,877-229-2244-,http://www.floridapeninsula.com,D+,10,A,3,NR,33,119370,"119,370",138228,134660,135095,134584,134660,135095,123314,699,699,463,236,58.6,99,3,f
+15,Florida Peninsula Insurance Co.,P.O. Box 50969,Sarasota,FL,34232-9989,877-229-2244-,http://www.floridapeninsula.com,C-,9,A,3,NR,33,119370,"119,370",138228,134660,135095,134584,134660,135095,123314,699,699,463,236,58.6,99,3,f
 16,ASI Preferred Insurance Corp.,1 Asi Way,St. Petersburg,FL,33702-2514,727-821-8765,http://www.americanstrategic.com,C,8,A'',1,A,5,115159,"115,159",99265,102139,105312,107695,102139,105312,113562,39,39,24,15,3.4,23,1,f
 17,Florida Family Insurance Co.,"27599 Riverview Center Blvd., Suite 100",Bonita Springs,FL,34134-4323,239-495-4700,http://www.floridafamily.com,C,8,A',2,B++,9,105606,"105,606",104189,105143,106005,106217,105143,106005,106767,59,59,28,31,5.6,31,1,f
 18,Castle Key Indemnity Co.,"3075 Sanders Road, Suite H1E",Northbrook,IL,60062-7127,800-386-6126,http://www.allstate.com,B,5,A',2,B-,15,105405,"105,405",107634,106897,107040,107771,106897,107040,105274,117,117,76,41,11.1,52,2,f
@@ -21,18 +21,18 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 20,Tower Hill Signature Insurance Co.,7201 N.W. 11Th Place,Gainesville,FL,32605,352-333-1362,http://www.thig.com,D,11,A,3,NR,33,93696,"93,696",100165,99946,99276,98566,99946,99276,95716,210,210,148,62,22.4,84,3,f
 21,Olympus Insurance Co.,4200 Northcorp Parkway Suite 400,Palm Beach Gardens,FL,33410,561-231-5902,http://www.oigfl.com,D+,10,A,3,NR,33,85406,"85,406",70207,70800,74034,76276,70800,74034,89087,182,182,95,87,21.3,81,3,f
 22,Castle Key Insurance Co.,"3075 Sanders Road, Suite H1E",Northbrook,IL,60062-7127,800-386-6126,http://www.allstate.com,B-,6,A',2,B-,15,82328,"82,328",98016,95823,93432,90905,95823,93432,84748,299,299,199,100,36.3,96,3,f
-23,First Protective Insurance Co.,"7131 Business Park Lane, Suite 300",Lake Mary,FL,32746,(407) 444-5224,https://www.firstprotective.com,D+,10,A,3,NR,33,76973,"76,973",37632,37596,37267,37296,37596,37267,73826,101,101,58,43,13.1,58,2,f
+23,First Protective Insurance Co.,"7131 Business Park Lane, Suite 300",Lake Mary,FL,32746,(407) 444-5224,https://www.firstprotective.com,C-,9,A,3,NR,33,76973,"76,973",37632,37596,37267,37296,37596,37267,73826,101,101,58,43,13.1,58,2,f
 24,Tower Hill Preferred Insurance Co. ,7201 N.W. 11Th Place,Gainesville,FL,32605,352-333-1362,http://www.thig.com,D,11,A,3,NR,33,72667,"72,667",72824,71246,69052,67530,71246,69052,74783,186,186,145,41,25.6,86,3,f
 25,Safe Harbor Insurance Co.,2549 Barrington Circle,Tallahassee,FL,32308,850-386-1115,http://www.oceanharbor-ins.com,C-,9,A',2,NR,33,71311,"71,311",50233,59133,62103,64034,59133,62103,69979,96,96,53,43,13.5,60,2,f
-26,ASI Assurance Corp.,1 Asi Way,St. Petersburg,FL,33702-2514,727-821-8765,http://www.americanstrategic.com,C+,7,A'',1,A,5,69000,"69,000",87205,84123,81186,78869,84123,81186,71221,76,76,50,26,11,51,2,f
-27,Southern Fidelity Insurance Co.,2255 Killearn Center Boulevard,Tallahassee,FL,32309,850-521-3080,http://www.southernfidelityins.com,C+,7,A,3,NR,33,66585,"66,585",69283,72059,70146,68922,72059,70146,67912,202,202,122,80,30.3,93,3,f
+26,ASI Assurance Corp.,1 Asi Way,St. Petersburg,FL,33702-2514,727-821-8765,http://www.americanstrategic.com,B-,6,A'',1,A,5,69000,"69,000",87205,84123,81186,78869,84123,81186,71221,76,76,50,26,11,51,2,f
+27,Southern Fidelity Insurance Co.,2255 Killearn Center Boulevard,Tallahassee,FL,32309,850-521-3080,http://www.southernfidelityins.com,B-,6,A,3,NR,33,66585,"66,585",69283,72059,70146,68922,72059,70146,67912,202,202,122,80,30.3,93,3,f
 28,American Modern Insurance Co. Of Florida,7000 Midland Blvd,Amelia,OH,45102-2607,800-543-2644-6771,http://www.amig.com,C,8,NR,7,A+,3,65228,"65,228",47856,48634,49697,51243,48634,49697,58414,5,5,0,5,0.8,18,1,f
 29,Cypress Property & Casualty Insurance Co.,"13901 Sutton Park Drive South, Suite 310",Jacksonville,FL,32224-0230,904-371-2394,http://www.cypressig.com,C,8,A',2,NR,33,64483,"64,483",71997,71798,70821,69349,71798,70821,65888,61,61,40,21,9.5,47,2,f
 30,Auto Club Insurance Co. Of Florida,"14055 Riveredge Drive, Suite 500",Tampa,FL,33637,813-632-7317,http://www.autoclubfl.com,C,8,A,3,B++,9,64465,"64,465",58120,59423,60716,61593,59423,60716,63805,39,39,18,21,6,33,1,f
 31,American Strategic Insurance Corp.,1 Asi Way,St. Petersburg,FL,33702-2514,727-821-8765,http://www.americanstrategic.com/,C,8,A'',1,A,5,63030,"63,030",62200,62033,61642,61672,62033,61642,62791,84,84,41,43,13.3,59,2,f
 32,Southern Fidelity Property & Casualty,2255 Killearn Center Blvd,Tallahassee,FL,32309,850-521-3080,http://www.southernfidelityins.com,C+,7,A,3,NR,33,61175,"61,175",74543,75824,71016,66373,75824,71016,62370,49,49,0,49,8,41,2,f
 33,Tower Hill Select Insurance Co.,7201 N.W. 11Th Place,Gainesville,FL,32605,352-333-1362,http://www.thig.com,C-,9,A,3,NR,33,60072,"60,072",59484,62479,64847,64368,62479,64847,61437,187,187,105,82,31.1,94,3,f
-34,Southern Oak Insurance Co.,"816 A1A North, Suite 302",Ponte Vedra Beach,FL,32082,877-900-3971-,http://www.southernoakins.com,D+,10,A,3,NR,33,59890,"59,890",63172,62726,61349,61164,62726,61349,58639,157,157,112,45,26.2,90,3,f
+34,Southern Oak Insurance Co.,"816 A1A North, Suite 302",Ponte Vedra Beach,FL,32082,877-900-3971-,http://www.southernoakins.com,C-,9,A,3,NR,33,59890,"59,890",63172,62726,61349,61164,62726,61349,58639,157,157,112,45,26.2,90,3,f
 35,Gulfstream Property And Casualty Insurance Co.,1501 Lady Street,Columbia,SC,34240,866-485-3004,http://www.gspcic.com,C,8,A,3,NR,33,59512,"59,512",55500,56449,56898,57249,56449,56898,59188,88,88,48,40,14.8,67,3,f
 36,USAA Casualty Insurance Co.,9800 Fredericksburg Road,San Antonio,TX,78288,800-531-8111,http://www.usaa.com,A-,3,NR,7,A++,1,57770,"57,770",54776,53956,53589,53942,53956,53589,56278,83,83,47,36,14.4,64,2,f
 37,American Traditions Insurance Co.,7785 66Th Streeet,Pinellas Park,FL,33781,727-561-0013-,http://www.jergermga.com,C-,9,A,3,NR,33,55968,"55,968",49376,50725,52407,53316,50725,52407,55326,100,100,68,32,17.9,74,3,f
@@ -44,13 +44,13 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 43,Capitol Preferred Insurance Co.,"2255 Killearn Center Boulevard,",Tallahassee,FL,32309,850-521-0742,http://www.capitol-preferred.com,D,11,A,3,NR,33,44120,"44,120",41991,41634,41614,41860,41634,41614,44281,40,40,0,40,9.1,44,2,f
 44,Florida Farm Bureau Casualty Insurance Co.,5700 S.W. 34Th Street,Gainesville,FL,32608-5330,352-374-1555,http://www.floridafarmbureau.com,B-,6,NR,7,NR,33,42526,"42,526",45330,44849,44410,43975,44849,44410,42889,44,44,30,14,10.3,49,2,f
 45,Florida Farm Bureau General Insurance Co.,5700 S.W. 34Th Street,Gainesville,FL,32608-5330,352-374-1555,http://www.floridafarmbureau.com,B,5,NR,7,A,5,41399,"41,399",42790,42575,42361,42206,42575,42361,41628,38,38,26,12,9.2,46,2,f
-46,Elements Property Insurance Co.,"2367 Centerville Road, 1St Floor",Tallahassee,FL,32308,0,http://www.elements-ins.com,B-,6,A,3,NR,33,37761,"37,761",8447,13585,16443,15814,13585,16443,36641,11,11,0,11,2.9,21,1,f
+46,Elements Property Insurance Co.,"2367 Centerville Road, 1St Floor",Tallahassee,FL,32308,0,http://www.elements-ins.com,C+,7,A,3,NR,33,37761,"37,761",8447,13585,16443,15814,13585,16443,36641,11,11,0,11,2.9,21,1,f
 47,Liberty Mutual Fire Insurance Co.,175 Berkeley Street,Boston,MA,2116,617-357-9500,http://www.libertymutualgroup.com,C+,7,NR,7,A,5,36289,"36,289",41377,40272,39259,38387,40272,39259,36727,95,95,69,26,26.2,90,3,f
 48,Foremost Insurance Co.,P.O. Box 2450,Grand Rapids,MI,49501-2450,818-965-0433,http://www.foremost.com,B,5,NR,7,A,5,35632,"35,632",37155,36121,35582,35320,36121,35582,35388,41,41,28,13,11.5,54,2,f
 49,Prepared Insurance Co.,1715 N Westshore Blvd Suite 930,Tampa,FL,33607,813-286-3733,http://www.preparedins.com,C-,9,A,3,NR,33,32935,"32,935",19754,20588,21547,22488,20588,21547,31432,56,56,34,22,17,71,3,f
 50,Federal Insurance Co.,202 Hall'S Mill Road,Whitehous,NJ,8889,908-572-5343,http://www.chubb.com,B,5,NR,7,A++ u*,2,32456,"32,456",31598,31707,31938,31977,31707,31938,32380,10,10,4,6,3.1,22,1,f
 51,Nationwide Insurance Co. Of Florida,"One West Nationwide Blvd., 3-04-101",Columbus,OH,43215-2220,800-882-2822,http://www.nationwide.com,C+,7,A,3,B+,11,32382,"32,382",36931,36095,35134,34360,36095,35134,32690,88,88,63,25,27.2,92,3,f
-52,Florida Specialty Insurance Co.,"4500 Nw 27Th Avenue, Building C2",Gainesville,FL,32606,352-333-0160-4103,http://www.floridaspecialty.com,NR,16,A,3,NR,33,29748,"29,748",30986,30968,31099,31019,30968,31099,30128,0,0,0,0,0,0,1,f
+52,Florida Specialty Insurance Co.,"4500 Nw 27Th Avenue, Building C2",Gainesville,FL,32606,352-333-0160-4103,http://www.floridaspecialty.com,C,8,A,3,NR,33,29748,"29,748",30986,30968,31099,31019,30968,31099,30128,0,0,0,0,0,0,1,f
 53,First Community Insurance Co.,11101 Roosevelt Blvd. N,St. Petersburg,FL,33716,727-823-4000-4112,http://www.bankersinsurance.com,C-,9,A,3,B+,11,29005,"29,005",33084,37029,34769,33757,37029,34769,30383,41,41,24,17,14.1,63,2,f
 54,Hartford Insurance Co. Of The Midwest,200 Hopmeadow Street,Simsbury,CT,06089-9793,800-451-6944,http://www.thehartford.com,B,5,NR,7,A+,3,25798,"25,798",32503,31481,30447,29481,31481,30447,26675,66,66,37,29,25.6,86,3,f
 55,Sawgrass Mutual Insurance Co.,"1000 Sawgrass Corporate Pkwy, Suite 100",Sunrise,FL,33323,954-376-6868,http://www.sawgrassmutual.com,D,11,A,3,NR,33,25208,"25,208",25307,25798,26402,26550,25798,26402,26809,104,104,55,49,41.3,97,3,f
@@ -78,7 +78,7 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 77,Edison Insurance Co.,P.O. Box 51329,Sarasota,FL,34232-0311,866-568-8922-,http://www.edisoninsurance.com,NR,16,A,3,NR,33,4742,"4,742",0,0,0,0,0,0,2324,0,0,0,0,0,0,1,f
 78,American Coastal Insurance Co.,1300 Sawgrass Corporate Parkway Suite 144,Sunrise,FL,33323,954-889-3384-,http://www.amcoastal.com,C-,9,A',2,NR,33,4653,"4,653",4105,4169,4225,4294,4169,4225,4591,0,0,0,0,0,0,1,f
 79,American Colonial Insurance Co.,260 Wekiva Springs Road; Suite 2060,Longwood,FL,32779,770-884-1144-101,http://www.egiauto.com,C-,9,A,3,NR,33,4472,"4,472",0,0,0,0,0,0,4513,0,0,0,0,0,0,1,f
-80,New Hampshire Insurance Co.,"175 Water Street, 18Th Floor",New York,NY,10038,212-458-3732,http://www.aig.com,D+,10,NR,7,A,5,3935,"3,935",4893,4674,4467,4477,4674,4467,3930,6,6,2,4,15.2,68,3,f
+80,New Hampshire Insurance Co.,"175 Water Street, 18Th Floor",New York,NY,10038,212-458-3732,http://www.aig.com,C-,9,NR,7,A,5,3935,"3,935",4893,4674,4467,4477,4674,4467,3930,6,6,2,4,15.2,68,3,f
 81,Armed Forces Insurance Exchange,550 Eisenhower Road,Leavenworth,KS,66048,800-255-6792,http://www.afi.org,C,8,NR,7,B++,9,3481,"3,481",4065,3989,3912,3833,3989,3912,3592,6,6,2,4,17.2,72,3,f
 82,Response Insurance Co.,"50 Glenmaura National Blvd.,  Ste. 201",Moosic,PA,18507,570-596-2036,http://www.kemper.com,D+,10,NR,7,A-,7,3453,"3,453",0,0,212,1281,0,212,3520,0,0,0,0,0,0,1,f
 83,Centauri Specialty Insurance Co.,"5391 Lakewood Ranch Blvd., Suite 303",Sarasota,FL,34240,941-870-0204-205,http://www.centaurispecialty.com,D,11,A,3,NR,33,2959,"2,959",0,0,0,0,0,0,1998,0,0,0,0,0,0,1,f
@@ -119,7 +119,7 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 118,Pacific Indemnity Co.,202 Hall'S Mill Road,Whitehou,NJ,8889,908-572-5343,http://www.chubb.com,B,5,NR,7,A++ u*,2,167,167,198,190,182,181,190,182,173,0,0,0,0,-,,0,f
 119,Guideone Mutual Insurance Co.,1111 Ashworth Road,West Des Moines,IA,50265-3538,515-267-2315,http://www.guideone.com,B-,6,NR,7,A,5,159,159,163,164,164,163,164,164,161,0,0,0,0,-,,0,f
 120,Hanover Insurance Co. (The),440 Lincoln Street,Worcester,MA,01653-0002,508-853-7200-8553955,http://www.hanover.com,B,5,NR,7,A,5,147,147,179,172,173,173,172,173,176,0,0,0,0,-,,0,f
-121,Travelers Indemnity Co.,"One Tower Square, Ms08A",Hartford,CT,6183,860-277-1248,http://www.travelers.com,NR,16,NR,7,A++,1,142,142,114,117,127,132,117,127,133,0,0,0,0,-,,0,f
+121,Travelers Indemnity Co.,"One Tower Square, Ms08A",Hartford,CT,6183,860-277-1248,http://www.travelers.com,B,5,NR,7,A++,1,142,142,114,117,127,132,117,127,133,0,0,0,0,-,,0,f
 122,Affiliated FM Insurance Co.,270 Central Avenue,Johnston,RI,02919-4949,401-415-1559,http://www.fmglobal.com,C,8,NR,7,A+,3,127,127,131,131,130,131,131,130,131,0,0,0,0,-,,0,f
 123,Westfield Insurance Co.,One Park Circle,Westfield Center,OH,44251,330-887-6344,http://www.westfieldgrp.com,B-,6,NR,7,NR,33,109,109,128,128,123,120,128,123,111,0,0,0,0,-,,0,f
 124,American States Insurance Co.,175 Berkeley Street,Boston,MA,2116,617-357-9500,http://www.safeco.com,C,8,NR,7,NR,33,85,85,106,104,99,92,104,99,85,0,0,0,0,-,,0,f
@@ -138,7 +138,7 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 137,United States Fire Insurance Co.,305 Madison Avenue,Morristown,NJ,7962,973-490-6958,http://www.cfins.com,C,8,NR,7,A,5,18,18,0,0,0,0,0,0,18,0,0,0,0,-,,0,f
 138,Great American Alliance Insurance Co.,301 E Fourth Street,Cincinnati,OH,45202,800-972-3008,http://www.greatamericaninsurancegroup.com,C,8,NR,7,A+,3,17,17,14,16,17,17,16,17,19,0,0,0,0,-,,0,f
 139,St. Paul Fire & Marine Insurance Co.,"One Tower Square, 5 Ms",Hartford,CT,6183,860-277-1561,http://www.travelers.com,B,5,NR,7,NR,33,16,16,16,16,15,13,16,15,15,0,0,0,0,-,,0,f
-140,State National Insurance Co.,1900 L. Don Dodson Dr.,Bedford,TX,76021,817-265-2000,http://www.statenational.com,C+,7,NR,7,A,5,16,16,0,0,2,3,0,2,15,0,0,0,0,-,,0,f
+140,State National Insurance Co.,1900 L. Don Dodson Dr.,Bedford,TX,76021,817-265-2000,http://www.statenational.com,B-,6,NR,7,A,5,16,16,0,0,2,3,0,2,15,0,0,0,0,-,,0,f
 141,Factory Mutual Insurance Co.,270 Central Avenue,Johnston,RI,02919-4949,401-415-1559,http://www.fmglobal.com,C,8,NR,7,A+,3,15,15,13,13,13,13,13,13,15,0,0,0,0,-,,0,f
 142,American Security Insurance Co.,11222 Quail Roost Drive,Miami,FL,33157,800-852-2244,http://www.assurant.com,B,5,NR,7,A,5,14,14,14,14,14,14,14,14,14,15,15,4,11,-,,0,f
 143,Guideone America Insurance Co.,1111 Ashworth Road,West Des Moines,IA,50265-3538,515-267-2315,http://www.guideone.com,C+,7,NR,7,NR,33,13,13,16,15,15,14,15,15,13,0,0,0,0,-,,0,f
@@ -155,7 +155,7 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 154,Continental Insurance Co.,333 S. Wabash Ave,Chicago,IL,60604,312-822-3955,http://www.cna.com,C,8,NR,7,A,5,3,3,3,2,2,3,2,2,2,0,0,0,0,-,,0,f
 155,Mitsui Sumitomo Insurance Co. Of America,15 Independence Blvd,Warren,NJ,07059-0602,908-604-2900,http://www.msigusa.com,B+,4,NR,7,A+,3,3,3,2,2,2,2,2,2,3,0,0,0,0,-,,0,f
 156,Ohio Security Insurance Co.,175 Berkeley Street,Boston,MA,2116,617-357-9500,http://www.libertymutualgroup.com,C-,9,NR,7,A,5,3,3,0,0,0,1,0,0,3,0,0,0,0,-,,0,f
-157,Stillwater Insurance Co.,P. O. Box 45126,Jacksonville,FL,32232-5126,904-997-7310-,http://www.stillwaterinsurance.com,NR,16,NR,7,NR,33,3,3,0,0,0,0,0,0,0,0,0,0,0,-,,0,f
+157,Stillwater Insurance Co.,P. O. Box 45126,Jacksonville,FL,32232-5126,904-997-7310-,http://www.stillwaterinsurance.com,B-,6,NR,7,NR,33,3,3,0,0,0,0,0,0,0,0,0,0,0,-,,0,f
 158,American Agri-Business Insurance Co.,7101 82Nd Street,Lubbock,TX,79424,806-473-0333,http://www.armt.com,C+,7,NR,7,A,5,2,2,4,4,4,5,4,4,2,0,0,0,0,-,,0,f
 159,American Economy Insurance Co.,"1001 Fourth Avenue, Safeco Plaza",Seattle,WA,98154,617-357-9500,http://www.safeco.com,C,8,NR,7,A,5,2,2,4,2,3,3,2,3,2,0,0,0,0,-,,0,f
 160,Century-National Insurance Co.,16650 Sherman Way,Van Nuys,CA,91406,818-760-0880-2296,http://www.cnico.com,B,5,NR,7,A,5,2,2,4,4,4,2,4,4,2,0,0,0,0,-,,0,f
@@ -165,11 +165,11 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 164,St. Paul Protective Insurance Co.,"One Tower Square, 5 Ms",Hartford,CT,6183,860-277-1561,http://www.travelers.com,B-,6,NR,7,A++,1,1,1,1,1,1,1,1,1,1,0,0,0,0,-,,0,f
 165,Valley Forge Insurance Co.,333 S. Wabash Ave,Chicago,IL,60604,312-822-3955,http://www.cna.com,C,8,NR,7,A,5,1,1,1,1,0,1,1,0,2,0,0,0,0,-,,0,f
 166,American Insurance Co. (The),"225 W. Washington Street, Suite 1800",Chicago,IL,60606-3484,312-224-3371,http://www.firemansfund.com,C-,9,NR,7,A+,3,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,0,f
-167,American Zurich Insurance Co.,1400 American Lane,Schaumburg,IL,60196-1056,847-605-6201,http://www.zurichna.com,NR,16,NR,7,NR,33,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,0,f
+167,American Zurich Insurance Co.,1400 American Lane,Schaumburg,IL,60196-1056,847-605-6201,http://www.zurichna.com,C,8,NR,7,NR,33,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,0,f
 168,Fair American Insurance And Reinsurance Co.,"One Liberty Plaza, 165 Broadway",New York,NY,10006,212-365-2200,http://www.transre.com,B,5,NR,7,A,5,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,0,f
 169,Fidelity And Deposit Co. Of Maryland,1400 American Lane,Schaumburg,IL,60196-1056,847-605-6201,http://www.zurichna.com,C,8,NR,7,A+,3,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,0,f
 170,Horace Mann Insurance Co.,#1 Horace Mann Plaza,Springfield,IL,62715,800-999-1030,http://www.horacemann.com,B,5,NR,7,A-,7,0,0,387,380,356,259,380,356,0,2,2,0,2,-,,0,f
 171,National Surety Corp.,"225 W. Washington Street, Suite 1800",Chicago,IL,60606-3484,312-224-3371,http://www.firemansfund.com,C,8,NR,7,A+,3,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,0,f
-172,St. Paul Mercury Insurance Co.,"One Tower Square, 5 Ms",Hartford,CT,6183,860-277-1561,http://www.travelers.com,NR,16,NR,7,NR,33,0,0,1,1,0,0,1,0,0,0,0,0,0,-,,0,f
+172,St. Paul Mercury Insurance Co.,"One Tower Square, 5 Ms",Hartford,CT,6183,860-277-1561,http://www.travelers.com,B-,6,NR,7,NR,33,0,0,1,1,0,0,1,0,0,0,0,0,0,-,,0,f
 173,Zurich American Insurance Co.,1400 American Lane,Schaumburg,IL,60196-1056,847-605-6201,http://www.zurichna.com,C+,7,NR,7,A+,3,0,0,1,2,4,3,2,4,2,0,0,0,0,-,,0,f
-174,Zurich American Insurance Co. of Illinois,1400 American Lane,Schaumburg,IL,60196-1056,847-605-6201,http://www.zurichna.com,NR,16,NR,7,NR,33,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,,
+174,Zurich American Insurance Co. of Illinois,1400 American Lane,Schaumburg,IL,60196-1056,847-605-6201,http://www.zurichna.com,C,8,NR,7,NR,33,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,,
