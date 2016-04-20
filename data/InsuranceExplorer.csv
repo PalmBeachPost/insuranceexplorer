@@ -135,7 +135,7 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 134,Phoenix Insurance Co.,"One Tower Square, Ms08A",Hartford,CT,6183,860-277-1248,http://www.travelers.com,B,5,NR,7,A++,1,32,32,39,37,33,34,37,33,37,32,32,0,0,0,0,0,-,,0,f
 135,Great American Alliance Insurance Co.,301 E Fourth Street,Cincinnati,OH,45202,800-972-3008,http://www.greatamericaninsurancegroup.com,C,8,NR,7,A+,3,21,21,14,16,17,17,16,17,19,17,21,0,0,0,0,0,-,,0,f
 136,United States Fire Insurance Co.,305 Madison Avenue,Morristown,NJ,7962,973-490-6958,http://www.cfins.com,C,8,NR,7,A,5,19,19,0,0,0,0,0,0,18,18,19,0,0,0,0,0,-,,0,f
-137,"National Union Fire Insurance Co. of Pittsburgh, PA","175 Water Street, 18Th Floor",New York,NY,10038,212-458-3732,http://www.aig.com,NR,16,NR,7,NR,33,18,18,0,0,0,0,0,0,0,0,18,0,0,0,0,0,-,,0,f
+137,"National Union Fire Insurance Co. of Pittsburgh, PA","175 Water Street, 18Th Floor",New York,NY,10038,212-458-3732,http://www.aig.com,C,8,NR,7,NR,33,18,18,0,0,0,0,0,0,0,0,18,0,0,0,0,0,-,,0,f
 138,Factory Mutual Insurance Co.,270 Central Avenue,Johnston,RI,02919-4949,401-415-1559,http://www.fmglobal.com,C,8,NR,7,A+,3,17,17,13,13,13,13,13,13,15,15,17,0,0,0,0,0,-,,0,f
 139,State National Insurance Co.,1900 L. Don Dodson Dr.,Bedford,TX,76021,817-265-2000,http://www.statenational.com,B-,6,NR,7,A,5,17,17,0,0,2,3,0,2,15,16,17,0,0,0,0,0,-,,0,f
 140,St. Paul Fire & Marine Insurance Co.,"One Tower Square, 5 Ms",Hartford,CT,6183,860-277-1561,http://www.travelers.com,B,5,NR,7,NR,33,15,15,16,16,15,13,16,15,15,16,15,0,0,0,0,0,-,,0,f
@@ -143,8 +143,8 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 142,Guideone America Insurance Co.,1111 Ashworth Road,West Des Moines,IA,50265-3538,515-267-2315,http://www.guideone.com,C+,7,NR,7,NR,33,13,13,16,15,15,14,15,15,13,13,13,0,0,0,0,0,-,,0,f
 143,Continental Casualty Co.,333 S. Wabash Ave,Chicago,IL,60604,312-822-3955,http://www.cna.com,C,8,NR,7,A,5,11,11,34,30,30,35,30,30,14,12,11,0,0,0,0,0,-,,0,f
 144,General Insurance Co. Of America,175 Berkeley Street,Boston,MA,2116,617-357-9500,http://www.libertymutualgroup.com,C,8,NR,7,A,5,11,11,17,17,14,14,17,14,9,11,11,0,0,0,0,0,-,,0,f
-145,Granite State Insurance Co.,"175 Water Street, 18Th Floor",New York,NY,10038,212-458-3732,http://www.aig.com,NR,16,NR,7,NR,33,11,11,0,0,0,0,0,0,0,0,11,0,0,0,0,0,-,,0,f
-146,Illinois National Insurance Co.,"175 Water Street, 18Th Floor",New York,NY,10038,212-458-3732,http://www.aig.com,NR,16,NR,7,NR,33,8,8,0,0,0,0,0,0,0,0,8,0,0,0,0,0,-,,0,f
+145,Granite State Insurance Co.,"175 Water Street, 18Th Floor",New York,NY,10038,212-458-3732,http://www.aig.com,C+,7,NR,7,NR,33,11,11,0,0,0,0,0,0,0,0,11,0,0,0,0,0,-,,0,f
+146,Illinois National Insurance Co.,"175 Water Street, 18Th Floor",New York,NY,10038,212-458-3732,http://www.aig.com,C+,7,NR,7,NR,33,8,8,0,0,0,0,0,0,0,0,8,0,0,0,0,0,-,,0,f
 147,Stillwater Insurance Co.,P. O. Box 45126,Jacksonville,FL,32232-5126,904-997-7310-,http://www.stillwaterinsurance.com,B-,6,NR,7,NR,33,7,7,0,0,0,0,0,0,0,3,7,1,1,0,0,1,-,,0,f
 148,"American Casualty Co. Of Reading, Pennsylvania",333 S. Wabash Ave,Chicago,IL,60604,312-822-3955,http://www.cna.com,C,8,NR,7,A,5,6,6,17,18,14,8,18,14,6,6,6,0,0,0,0,0,-,,0,f
 149,Hanover American Insurance Co. (The),440 Lincoln Street,Worcester,MA,01653-0002,508-853-7200-8553955,http://www.hanover.com,C,8,NR,7,A,5,6,6,8,9,10,6,9,10,4,6,6,0,0,0,0,0,-,,0,f
@@ -166,7 +166,7 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 165,Mitsui Sumitomo Insurance Co. Of America,15 Independence Blvd,Warren,NJ,07059-0602,908-604-2900,http://www.msigusa.com,B+,4,NR,7,A+,3,1,1,2,2,2,2,2,2,3,3,1,0,0,0,0,0,-,,0,f
 166,St. Paul Protective Insurance Co.,"One Tower Square, 5 Ms",Hartford,CT,6183,860-277-1561,http://www.travelers.com,B-,6,NR,7,A++,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,-,,0,f
 167,Valley Forge Insurance Co.,333 S. Wabash Ave,Chicago,IL,60604,312-822-3955,http://www.cna.com,C,8,NR,7,A,5,1,1,1,1,0,1,1,0,2,1,1,0,0,0,0,0,-,,0,f
-168,American Guarantee and Liability Insurance Co.,1400 American Lane,Schaumburg,IL,60196-1056,847-605-6201,http://www.zurichna.com,NR,16,NR,7,NR,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,0,f
+168,American Guarantee and Liability Insurance Co.,1400 American Lane,Schaumburg,IL,60196-1056,847-605-6201,http://www.zurichna.com,C,8,NR,7,NR,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,0,f
 169,American Insurance Co. (The),"225 W. Washington Street, Suite 1800",Chicago,IL,60606-3484,312-224-3371,http://www.firemansfund.com,C-,9,NR,7,A+,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,0,f
 170,American Zurich Insurance Co.,1400 American Lane,Schaumburg,IL,60196-1056,847-605-6201,http://www.zurichna.com,C,8,NR,7,NR,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,0,f
 171,Horace Mann Insurance Co.,#1 Horace Mann Plaza,Springfield,IL,62715,800-999-1030,http://www.horacemann.com,B,5,NR,7,A-,7,0,0,387,380,356,259,380,356,0,0,0,4,4,0,2,2,-,,0,f
