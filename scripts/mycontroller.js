@@ -115,6 +115,18 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
                 $chartdata.quarters.push("2015 Q4");
                 $chartdata.policycounts.push(parseInt($scope.companyref.data.q4_2015_policycount));
             }	
+            if($scope.companyref.data.q1_2016_policycount){
+                $chartdata.quarters.push("2016 Q1");
+                $chartdata.policycounts.push(parseInt($scope.companyref.data.q1_2016_policycount));
+            }	
+            if($scope.companyref.data.q2_2016_policycount){
+                $chartdata.quarters.push("2016 Q2");
+                $chartdata.policycounts.push(parseInt($scope.companyref.data.q2_2016_policycount));
+            }	
+            if($scope.companyref.data.q3_2016_policycount){
+                $chartdata.quarters.push("2016 Q3");
+                $chartdata.policycounts.push(parseInt($scope.companyref.data.q3_2016_policycount));
+            }	
             if($chartdata.quarters.length > 1){
                 drawChart('#policycountchart',$chartdata.quarters,'Quarters', $chartdata.policycounts, 'No. of policies', 'Policy Count');
                 $scope.hasCharts=true;
