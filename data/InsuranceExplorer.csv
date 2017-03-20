@@ -23,7 +23,7 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 22,Olympus Insurance Co.,4200 Northcorp Parkway Suite 400,Palm Beach Gardens,FL,33410,561-231-5902,http://www.olympusinsurance.com,C-,9,A,3,NR,33,82811,"82,811",70207,70800,74034,76276,70800,74034,89087,85406,86260,84447,83550,82811,214,214,95,87,32,25.8,77,3,f
 23,Safe Harbor Insurance Co.,2549 Barrington Circle,Tallahassee,FL,32308,850-386-1115,http://www.oceanharbor-ins.com,C,8,A',2,NR,33,78019,"78,019",50233,59133,62103,64034,59133,62103,69979,71311,73508,75762,77172,78019,125,125,53,43,29,16,57,2,f
 24,Castle Key Insurance Co.,"3075 Sanders Road, Suite H1E",Northbrook,IL,60062-7127,800-386-6126,http://www.allstate.com,B-,6,A',2,B-,15,74557,"74,557",98016,95823,93432,90905,95823,93432,84748,82328,80098,78073,76176,74557,360,360,199,100,61,48.3,96,3,f
-25,Cypress Property & Casualty Insurance Co.,"13901 Sutton Park Drive South, Suite 310",Jacksonville,FL,32224-0230,904-371-2394,http://www.cypressig.com,C+,7,A',2,NR,33,68381,"68,381",71997,71798,70821,69349,71798,70821,65888,64483,63402,61945,64407,68381,83,83,40,21,22,12.1,43,2,f
+25,Cypress Property & Casualty Insurance Co.,"13901 Sutton Park Drive South, Suite 310",Jacksonville,FL,32224-0230,904-371-2394,http://www.cypressig.com,C+,7,A,3,NR,33,68381,"68,381",71997,71798,70821,69349,71798,70821,65888,64483,63402,61945,64407,68381,83,83,40,21,22,12.1,43,2,f
 26,American Strategic Insurance Corp.,1 Asi Way,St. Petersburg,FL,33702-2514,727-821-8765,http://www.americanstrategic.com/,C,8,A'',1,A,5,65400,"65,400",62200,62033,61642,61672,62033,61642,62791,63030,64195,64719,65021,65400,107,107,41,43,23,16.4,58,2,f
 27,Auto Club Insurance Co. Of Florida,"14055 Riveredge Drive, Suite 500",Tampa,FL,33637,813-632-7317,http://www.autoclubfl.com,B-,6,A,3,B++,9,65284,"65,284",58120,59423,60716,61593,59423,60716,63805,64465,64875,65561,65403,65284,53,53,18,21,14,8.1,36,2,f
 28,Southern Fidelity Insurance Co.,2255 Killearn Center Boulevard,Tallahassee,FL,32309,850-521-3080,http://www.southernfidelityins.com,B,5,A,3,NR,33,61896,"61,896",69283,72059,70146,68922,72059,70146,67912,66585,65675,64263,62818,61896,275,275,122,80,73,44.4,93,3,f
@@ -172,11 +172,11 @@ id,name,address,city,state,zip,phone,webaddress,weiss,weissrank,demotech,demotec
 171,St. Paul Mercury Insurance Co.,"One Tower Square, 5 Ms",Hartford,CT,6183,860-277-1561,http://www.travelers.com,B-,6,NR,7,NR,33,1,1,1,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,-,,0,f
 172,St. Paul Protective Insurance Co.,"One Tower Square, 5 Ms",Hartford,CT,6183,860-277-1561,http://www.travelers.com,B-,6,NR,7,A++,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,-,,0,f
 173,Valley Forge Insurance Co.,333 S. Wabash Ave,Chicago,IL,60604,312-822-3955,http://www.cna.com,C,8,NR,7,A,5,1,1,1,1,0,1,1,0,2,1,1,0,1,1,0,0,0,0,0,-,,0,f
-174,American Zurich Insurance Co.,1400 American Lane,Schaumburg,IL,60196-1056,847-605-6201,http://www.zurichna.com,C+,7,NR,7,NR,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,,
-175,Amerisure Partners Insurance Co.,26777 Halsted Road,Farmington Hills,MI,48331-3586,248-615-9000 Ext 585,http://www.amerisure.com,C+,7,,,,,,,,,,,,,,,,0,1,0,,,,,,,,,
-176,Associated Indemnity Corp.,"225 W. Washington Street, Suite 1800",Chicago,IL,60606-3484,312-224-3371,http://www.firemansfund.com,C,8,,,,,,,,,,,,,,,,114,56,0,,,,,,,,,
-177,Fair American Insurance And Reinsurance Co.,"One Liberty Plaza, 165 Broadway",New York,NY,10006,212-365-2200,http://www.transre.com,B,5,,,,,,,,,,,,,,,,0,0,0,,,,,,,,,
-178,Fidelity And Deposit Co. Of Maryland,1400 American Lane,Schaumburg,IL,60196-1056,847-605-6201,http://www.zurichna.com,C+,7,,,,,,,,,,,,,,,,0,0,0,,,,,,,,,
-179,Horace Mann Insurance Co.,#1 Horace Mann Plaza,Springfield,IL,62715,800-999-1030,http://www.horacemann.com,B,5,,,,,,,,,,,,,,,,0,0,0,,,,,,,,,
-180,MagMutual Insurance Co.,"3535 Piedmont Rd Ne Building 14, Suite 1000",Atlanta,GA,30305-1518,404-842-5600,http://www.magmutual.com,B-,6,,,,,,,,,,,,,,,,0,0,0,,,,,,,,,
-181,Zurich American Insurance Co.,1400 American Lane,Schaumburg,IL,60196-1056,847-605-6201,http://www.zurichna.com,B-,6,,,,,,,,,,,,,,,,1,0,0,,,,,,,,,
+174,American Zurich Insurance Co.,1400 American Lane,Schaumburg,IL,60196-1056,847-605-6201,http://www.zurichna.com,C+,7,NR,7,NR,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,0,f
+175,Amerisure Partners Insurance Co.,26777 Halsted Road,Farmington Hills,MI,48331-3586,248-615-9000 Ext 585,http://www.amerisure.com,C+,7,NR,7,NR,33,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,-,,0,f
+176,Associated Indemnity Corp.,"225 W. Washington Street, Suite 1800",Chicago,IL,60606-3484,312-224-3371,http://www.firemansfund.com,C,8,NR,7,A+,3,0,0,298,280,274,269,280,274,244,236,191,114,56,0,0,0,0,0,0,-,,0,f
+177,Fair American Insurance And Reinsurance Co.,"One Liberty Plaza, 165 Broadway",New York,NY,10006,212-365-2200,http://www.transre.com,B,5,NR,7,A+,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,0,f
+178,Fidelity And Deposit Co. Of Maryland,1400 American Lane,Schaumburg,IL,60196-1056,847-605-6201,http://www.zurichna.com,C+,7,NR,7,A+,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,0,f
+179,Horace Mann Insurance Co.,#1 Horace Mann Plaza,Springfield,IL,62715,800-999-1030,http://www.horacemann.com,B,5,NR,7,A,5,0,0,387,380,356,259,380,356,0,0,0,0,0,0,4,4,0,2,2,-,,0,f
+180,MagMutual Insurance Co.,"3535 Piedmont Rd Ne Building 14, Suite 1000",Atlanta,GA,30305-1518,404-842-5600,http://www.magmutual.com,B-,6,NR,7,NR,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,0,f
+181,Zurich American Insurance Co.,1400 American Lane,Schaumburg,IL,60196-1056,847-605-6201,http://www.zurichna.com,B-,6,NR,7,A+,3,0,0,1,2,4,3,2,4,2,0,0,1,0,0,0,0,0,0,0,-,,0,f
