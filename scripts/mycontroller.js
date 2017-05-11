@@ -131,15 +131,16 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
                 drawChart('#policycountchart',$chartdata.quarters,'Quarters', $chartdata.policycounts, 'No. of policies', 'Policy Count');
                 $scope.hasCharts=true;
             }
-            if($scope.companyref.data.total_2013_complaintcount && $scope.companyref.data.total_2014_complaintcount && $scope.companyref.data.total_2015_complaintcount){
+            if($scope.companyref.data.total_2013_complaintcount && $scope.companyref.data.total_2014_complaintcount && $scope.companyref.data.total_2015_complaintcount && $scope.companyref.data.total_2016_complaintcount){
                 var $actual = [];
                 $actual.push(parseInt($scope.companyref.data.total_2013_complaintcount));
                 $actual.push(parseInt($scope.companyref.data.total_2014_complaintcount));
                 $actual.push(parseInt($scope.companyref.data.total_2015_complaintcount));
+				$actual.push(parseInt($scope.companyref.data.total_2016_complaintcount));
 
                 // var $predicted =[0];
                 // $predicted.push($scope.companyref.data.total_2014_complaintcount);
-                drawStacks('#complaintcountchart',['2013','2014', '2015'],'No. of Complaints',
+                drawStacks('#complaintcountchart',['2013','2014', '2015', '2016'],'No. of Complaints',
                     // $predicted,'Estimated',
                     $actual,'Actual','Complaint count');
                 $scope.hasCharts=true;
