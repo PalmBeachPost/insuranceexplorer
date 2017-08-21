@@ -28,15 +28,15 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
 .config(['$routeProvider', function ($routeProvider) {
      $routeProvider
        .when('/', {
-            templateUrl: '//host.coxmediagroup.com/wpb/editorial/insuranceexplorer/TableView.html',
+            templateUrl: 'TableView.html',
             controller: 'TableCtrl'
         })
        .when('/detail/:companyId', {
            controller: 'DetailCtrl',
-           templateUrl: '//host.coxmediagroup.com/wpb/editorial/insuranceexplorer/DetailView.html'
+           templateUrl: 'DetailView.html'
         })
        .otherwise({
-            redirectTo: '//host.coxmediagroup.com/wpb/editorial/insuranceexplorer'
+            redirectTo: 'index.html'
        });
  }])
 .controller('TableCtrl', function ($scope, $filter, companyList, $http) {  
