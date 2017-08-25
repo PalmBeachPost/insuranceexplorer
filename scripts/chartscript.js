@@ -1,5 +1,5 @@
 function drawChart ($selector,$xData,$xName,$yData,$yName,$title){
-  jQuery($selector).highcharts
+  jQuery($selector).highcharts({
         chart: {
             type: 'line'
         },
@@ -30,7 +30,7 @@ function drawChart ($selector,$xData,$xName,$yData,$yName,$title){
 }
 
 function drawStacks($selector,$xData,$xName,$y1Data,$y1Name,$y2Data,$y2Name,$title){
-    jQuery($selector).highcharts
+    jQuery($selector).highcharts({
         chart: {
             type: 'column'
         },
@@ -92,7 +92,7 @@ function drawStacks($selector,$xData,$xName,$y1Data,$y1Name,$y2Data,$y2Name,$tit
 };
 
 function drawGauge ($selector,$min,$max,$value,$text,$title){
-  jQuery($selector).highcharts
+  jQuery($selector).highcharts({
      chart: {
             type: 'solidgauge'
         },
@@ -147,7 +147,7 @@ function drawGauge ($selector,$min,$max,$value,$text,$title){
 }
 
 function drawGaugeReverse ($selector,$min,$max,$value,$text,$title){
-    jQuery($selector).highcharts
+    jQuery($selector).highcharts({
          chart: {
             type: 'solidgauge'
         },
