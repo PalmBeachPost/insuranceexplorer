@@ -23,6 +23,12 @@ html{
   border-bottom: 4px solid cornflowerblue;
   z-index:9999999;
 }
+
+
+.textright{
+    text-align: right;
+}
+
 a, a img, img{
   outline : none;
   text-decoration: none;

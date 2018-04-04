@@ -2,7 +2,7 @@
    <a id="backbtn" href="/wpb/editorial/insuranceexplorer/#/">< Home</a>
    <h2>{{companyref.data.name}}</a></h2>
     <address>{{companyref.data.address}}, {{companyref.data.city}}, {{companyref.data.state}} {{companyref.data.zip}} 
-      <a href="//map.google.com?q={{companyref.data.address}},{{companyref.data.city}},{{companyref.data.state}} {{companyref.data.zip}}" target="blank">(map)</a>
+      <a href="//map.google.com?q={{companyref.data.address}},{{companyref.data.city}}, {{companyref.data.state}} {{companyref.data.zip}}" target="_blank">(map)</a>
     </address>
     <div id="contact">
       <a href="{{companyref.data.webaddress}}" target="blank">Website</a> | {{companyref.data.phone}}
@@ -22,7 +22,13 @@
         <div id="policycountchart" class="chart"></div>
         <div id="complaintcountchart" class="chart"></div>
     </section>
-    <hr/>
+
+    <h3>Loss ratios</h3>
+        <section id="loss" style="text-align: left;"><table style="padding-left: 15px; text-align: left; background-position-x: left !important;"><tr><td nowrap style="text-align: right; padding-right: 15px; font-weight: 700; max-width: 200px !important; background-position-x: left !important;">Long-term loss ratio</td><td nowrap>{{companyref.data.longloss}} &nbsp;</td><td width="100%"> </td></tr>
+        <tr><td nowrap style="text-align: right; padding-right: 15px; font-weight: 700;  background-position-x: left !important;">Short-term loss ratio</td><td nowrap>{{companyref.data.shortloss}} &nbsp;</td><td width="100%"> </td></tr></table></section>
+            <hr/>
+    
+    
       <footer id="footercredits">
             <p><b>Icons from <a href="http://www.thenounproject.com">Noun Project</a></p></b><p>
             <p>Main logo designed by <a href="http://thenounproject.com/Fhlcreative/">Phil Goodwin.</a></p>
