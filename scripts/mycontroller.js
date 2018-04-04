@@ -143,7 +143,10 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
                 $chartdata.quarters.push("2017 Q3");
                 $chartdata.policycounts.push(parseInt($scope.companyref.data.q3_2017_policycount));
             }	
-            
+            if($scope.companyref.data.q4_2017_policycount){
+                $chartdata.quarters.push("2017 Q4");
+                $chartdata.policycounts.push(parseInt($scope.companyref.data.q4_2017_policycount));
+            }	
             
             
             if($chartdata.quarters.length > 1){
