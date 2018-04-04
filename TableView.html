@@ -71,7 +71,7 @@
                         ng-click="sortTable('policycount')">
                         # Policies
                     </th> 
-                    <th ng-class="{'sorted':isSorted('total_complaints'),
+                    <th  ng-class="{'sorted':isSorted('total_complaints'),
                                  'ascending':isAscending('total_complaints'),
                                   'descending':!isAscending('total_complaints')}"
                       ng-click="sortTable('total_complaints')">
@@ -103,11 +103,11 @@
                 <td>{{company.weiss}}</td>
                 <td>{{company.demotech}}</td>
 				<td>{{company.ambest}}</td>
-                <td>{{company.policycount_display.replace('.',',')}}</td>
-                <td>{{company.total_complaints_display.replace('.',',')}}</td>
+                <td class="textright" >{{company.policycount_display.replace('.',',')}}</td>
+                <td class="textright" >{{company.total_complaints_display.replace('.',',')}}</td>
                 <td><img class="ratingicon" src="./icons/icon{{company.complaintpercentilegroup}}.png"/></td>
-                <td>{{company.longloss}}</td>
-                <td>{{company.shortloss}}</td>
+                <td class="textright" >{{company.longloss}}</td>
+                <td class="textright" >{{company.shortloss}}</td>
              </tr>
         </table>
         <hr/>
