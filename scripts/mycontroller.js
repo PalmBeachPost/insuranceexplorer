@@ -147,23 +147,27 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
                 $chartdata.quarters.push("2017 Q4");
                 $chartdata.policycounts.push(parseInt($scope.companyref.data.q4_2017_policycount));
             }	
-            
+            if($scope.companyref.data.q1_2018_policycount){
+                $chartdata.quarters.push("2018 Q1");
+                $chartdata.policycounts.push(parseInt($scope.companyref.data.q1_2018_policycount));
+            }	            
             
             if($chartdata.quarters.length > 1){
                 drawChart('#policycountchart',$chartdata.quarters,'Quarters', $chartdata.policycounts, 'No. of policies', 'Policy Count');
                 $scope.hasCharts=true;
             }
-            if($scope.companyref.data.total_2013_complaintcount && $scope.companyref.data.total_2014_complaintcount && $scope.companyref.data.total_2015_complaintcount && $scope.companyref.data.total_2016_complaintcount && $scope.companyref.data.total_2017_complaintcount){
+            if($scope.companyref.data.total_2013_complaintcount && $scope.companyref.data.total_2014_complaintcount && $scope.companyref.data.total_2015_complaintcount && $scope.companyref.data.total_2016_complaintcount && $scope.companyref.data.total_2017_complaintcount && $scope.companyref.data.total_2018_complaintcount){
                 var $actual = [];
                 $actual.push(parseInt($scope.companyref.data.total_2013_complaintcount));
                 $actual.push(parseInt($scope.companyref.data.total_2014_complaintcount));
                 $actual.push(parseInt($scope.companyref.data.total_2015_complaintcount));
 				$actual.push(parseInt($scope.companyref.data.total_2016_complaintcount));
                 $actual.push(parseInt($scope.companyref.data.total_2017_complaintcount));
+                $actual.push(parseInt($scope.companyref.data.total_2018_complaintcount));
 
                 // var $predicted =[0];
                 // $predicted.push($scope.companyref.data.total_2014_complaintcount);
-                drawStacks('#complaintcountchart',['2013','2014', '2015', '2016', '2017'],'No. of Complaints',
+                drawStacks('#complaintcountchart',['2013','2014', '2015', '2016', '2017', '2018'],'No. of Complaints',
                     // $predicted,'Estimated',
                     $actual,'Actual','Complaint count');
                 $scope.hasCharts=true;
