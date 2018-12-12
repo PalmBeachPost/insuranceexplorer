@@ -269,10 +269,13 @@ footer{
   td:nth-of-type(1):before { padding-left: 0; }
   td:nth-of-type(2):before { content: "Weiss: "; }
   td:nth-of-type(3):before { content: "Demotech: "; }
-  td:nth-of-type(4):before { content: "# Policies: "; }
-  td:nth-of-type(5):before { content: "# Complaints: "; }
-  td:nth-of-type(6):before { content: "Complaint Rating: "; }
-
+  td:nth-of-type(4):before { content: "A.M. Best: "; }
+  td:nth-of-type(5):before { content: "# Policies: "; }
+  td:nth-of-type(6):before { content: "# Complaints: "; }
+  td:nth-of-type(7):before { content: "Complaint Rating: "; }
+  td:nth-of-type(8):before { content: "Long-term loss ratio: "; }
+  td:nth-of-type(9):before { content: "Short-term loss ratio: "; }
+  
   .gauge{
     width:100%;
   }
