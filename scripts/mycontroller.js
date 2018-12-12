@@ -46,9 +46,12 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
         "name":false,
         "weissrank":false,
         "demotechrank":false,
+        "ambestrank": false,
         "policycount":true,
         "total_complaints":true,
-        "complaintpercentile":false
+        "complaintpercentile":false,
+        "longloss":false,
+        "shortloss": false
     }
     var sortedBy = {"field":null,"order":false};
     var orderBy = $filter('orderBy');
@@ -151,7 +154,14 @@ angular.module('InsuranceExplorerApp', ['ngRoute'])
                 $chartdata.quarters.push("2018 Q1");
                 $chartdata.policycounts.push(parseInt($scope.companyref.data.q1_2018_policycount));
             }	            
-            
+            if($scope.companyref.data.q2_2018_policycount){
+                $chartdata.quarters.push("2018 Q2");
+                $chartdata.policycounts.push(parseInt($scope.companyref.data.q1_2018_policycount));
+            }
+            if($scope.companyref.data.q3_2018_policycount){
+                $chartdata.quarters.push("2018 Q3");
+                $chartdata.policycounts.push(parseInt($scope.companyref.data.q1_2018_policycount));
+            }	  
             if($chartdata.quarters.length > 1){
                 drawChart('#policycountchart',$chartdata.quarters,'Quarters', $chartdata.policycounts, 'No. of policies', 'Policy Count');
                 $scope.hasCharts=true;
